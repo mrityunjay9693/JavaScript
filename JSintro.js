@@ -8,6 +8,7 @@ console.log('Welcome to tilde.'); // We can write string data inside double quot
     Backtick(``) : Sometime it is called template literals or template strings which is anotherway to type out
                    a string whithin ``. It is called backtick or grave accent.   
                    You can also use backtick for using string inside it.
+                   Backtick is used in string template. We will discuss string template later.
                    We will see it later.
 */
 console.log(`This is begining of JavaScript journey.`); 
