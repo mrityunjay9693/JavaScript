@@ -1,18 +1,50 @@
-JavaScript : 
+JavaScript: JavaScript is a leight-weight, high-level interpreted programming language which is dynamic in nature. It is 
+            primarly used for building interactive and dynamic web-pages and web applications.
+           *JavaScript is a "backward compatible programming language". This means, it will support all the features which
+            came many years ago.
+           *JavaScript is not "forward compatible programming language". This means if you are using loder version of your 
+            browser and using current featuresof JS, then that features will not support in your browser with older 
+            version. You have to keep update your browser time to time.
+
 
 ****************************************************Variables**************************************************************
 
 Variables:->Variable in JavaScript is the most basic building block programming entity which is used to store information.
-               And, these information can be used in the program later and if possible, can be altred. 
+            And, these information can be used in the program later and if possible, can be altred. 
           ->In other words it can be defined as : Variable is an container which is used to store a value like like a 
             number or string and can store any type of JavaScript values.
           ->A variable is a named container for a particular set of bits or type of data like integer, float, string etc.
           ->A variable in JavaScript is a named storage for data.
           ->Variable name in JavaScript in case-sensitive.
     
-Creation/Declaration of Variable in JS :
+          ->Variable in JavaScript is the most basic building block programming entity which is used to :
+              a)store information.
+              b)and,these information can be used in the program later 
+              c)and, if possible, can be altred/changed. 
+          
+          ->Variable name in JavaScript in case-sensitive.
+    
+ Creation/Declaration of Variable in JS :
+        ->Systax : 
+                  var/let/const variable_name = values;  
+                    
+                    eg: 1)var num = 12;
+                          let num1 = 123;
+                          const name1 = "JavaScript."
+                          console.log(num, num1, name1);
+                    output: 12, 123, JavaScript.
             
-            Systax : var/let/const variable_name = values;  
-            
-            *values/data/information can be : an integer, a character, a string etc.
-            *var/let/const are the keyword in JavaScript which is used to create any programming entity as variable. 
+        * values/data/information can be : an integer, a string etc.
+        * var/let/const are the keyword in JavaScript which is used to create any programming entity as variable.
+
+Rules for naming "variable": Following are the rules while naming a variable described as below: 
+      1.First character of a variable should not be any digit/number.We cannot start naming variable with 
+        digit/number.
+      2.While naming a variable name, a letter(alphabets), dollar sign($), and an underscore sign( _ ) can be used as 
+        first character of a variable name.
+      3.Only dollar sign($) and underscore( _ ) are the special symbols allowed for naming a variable name. Apart from dollar 
+        sign and underscore, other special characters are not allowed.
+      3.Spaces are not allowed within the characters of a variable name.
+      4.Reserved keywords are not allowed for naming a variable name.
+      5.Variable names are case-sensitive and we must takle care about its case.
+      6.We use camelCase while naming a variable name in JavaScript. camelCase is the naming convention for naming a variable.    
