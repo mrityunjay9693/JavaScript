@@ -47,4 +47,20 @@ Rules for naming "variable": Following are the rules while naming a variable des
       3.Spaces are not allowed within the characters of a variable name.
       4.Reserved keywords are not allowed for naming a variable name.
       5.Variable names are case-sensitive and we must takle care about its case.
-      6.We use camelCase while naming a variable name in JavaScript. camelCase is the naming convention for naming a variable.    
+      6.We use camelCase while naming a variable name in JavaScript. camelCase is the naming convention for naming a variable.
+ 
+**************************************************----String----**************************************************************
+
+String:-> String is defined as the sequence of characters or collection of characters is called string.
+       -> In JavaScript, anything you write down within the pair of single/double quotation mark is known as string. 
+       -> Values within the pair of single/double quotation are string whic are made up of sequence of characters, 
+          consists of letters, numbers, symbol, and even emojis.
+
+Creating of Strings:->Strings in JavaScript can be created in two ways, either putting values in quotations 
+                      or as object. The two ways for creating strings in JS ,emtioned below:
+                      a)String created as primitives, from string literals(putting values in quotes)
+                      b)String created as object, using the String() constructor(new String()).
+
+POINTS: a)In JavaScript's string, every character of the string has its own index i.e,, position.
+        b)Index/position of characters in string starting from Zero(0) that means it is Zero-based( based) indexing.
+        
