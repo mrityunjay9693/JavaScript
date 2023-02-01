@@ -57,7 +57,7 @@ String:-> String is defined as the sequence of characters or collection of chara
           consists of letters, numbers, symbol, and even emojis.
 
 Creating of Strings:->Strings in JavaScript can be created in two ways, either putting values in quotations 
-                      or as object. The two ways for creating strings in JS ,emtioned below:
+                      or as object. The two ways for creating strings in JS ,mentioned below:
                       a)String created as primitives, from string literals(putting values in quotes)
                       b)String created as object, using the String() constructor(new String()).
 

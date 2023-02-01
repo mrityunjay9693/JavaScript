@@ -10,3 +10,4 @@ let pos = gameName[4];
 console.log(pos); // at index 4, 'b' is present
 
 console.log(gameName[1]);
+ 

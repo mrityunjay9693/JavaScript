@@ -9,7 +9,7 @@ trim(): trim() method of string in JS is used to remove whitespaces(space charac
         let newVariable = name.trim(); // "Mrityunjay", here new variable is taken 
         name = name.trim(); // "Mrityunjay"
 */
-//1.Creatingnew variable
+//1.Creating new variable
 let countryName = "  India  ";
 console.log("String before trim:"+countryName);
 console.log(countryName.length); // total number of characters : 9(length of string)
