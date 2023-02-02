@@ -38,3 +38,9 @@ console.log(cityName);
 let houseName = " Yadavas Villas  ";
 houseName = houseName.trimEnd();
 console.log(houseName);
+
+let animalName = "  Cat";
+console.log("Before trim:");
+console.log(animalName);
+console.log("After removing spaces using trim():");
+console.log(animalName.trim());
