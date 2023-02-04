@@ -23,3 +23,16 @@ Now, we will look these ways to convert a number into string one by one:
                                 Ex: let value = 12;
                                 let newValue = String(value); //converts 12 to a "12" which is a string type
                                 console.log(newValue);       // "12"
+
+3]Concatenating an Empty String:By adding/Concatenating an empty string with the given number value
+                                (integer/floating-point) is most easy job to convert the given number value 
+                                to string type. By adding an empty string will internally be converted to String.
+                                
+                                Syntax: let variableName = value + " "; 
+                                    or, let variableName = '' + value;
+                                here, " "/'' is an empty string.
+                                Ex: let value = 12;
+                                let newValue = value + ""; //empty string will converts 12 to a "12" : string type
+                                console.log(newValue);       // "12"
+                                console.log(typrof newValue); // String
+
