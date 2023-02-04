@@ -4,13 +4,22 @@
                               3] Concatenating an Empty String
 Now, we will look these ways to convert a number into string one by one:
 
-1] Using toString() method : The toString() method belongs to the Number.Prototype objects which takes an integer or a
-                                floating-point number and converts into a string type.
-                                Syntax: variableName.toString(); : 
-                                here, variableName is any variable which has number value.
+1] Using toString() method: The toString() method belongs to the Number.Prototype objects which takes an integer or a
+                            floating-point number and converts into a string type. While converting a number into string
+                            type, make sure that number should not be "undefined" or "null".
+                            Syntax: variableName.toString(); : 
+                            here, variableName is any variable which has number value.
                             Ex: let value = 12;
                                 let newValue = value.toString(); //converts 12 to a "12" which is a string type
                                 console.log(newValue);          // "12"
 
-
-
+2] Using the String() function: Here, the String() method which is used to convert a number(integer or floating-point)
+                                into string type is a constructor, use to convert a number value into string type. It 
+                                takes the number(integer or floating-point) as a parameter for converting it into 
+                                string type. Here, if we pass value such as "null" or "undedined" then it will returned 
+                                null and undedined Strings respectively.
+                                Syntax: String(object); or String(parameter); 
+                                here, object/parameter has number value.
+                                Ex: let value = 12;
+                                let newValue = String(value); //converts 12 to a "12" which is a string type
+                                console.log(newValue);       // "12"
