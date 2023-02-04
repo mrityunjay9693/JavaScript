@@ -1,0 +1,16 @@
+->In JavaScript, there are various ways to convert a number into string. We can change any given number into string format
+  by using following methods: 1] Using toString() method 
+                              2] Using the String() function
+                              3] Concatenating an Empty String
+Now, we will look these ways to convert a number into string one by one:
+
+1] Using toString() method : The toString() method belongs to the Number.Prototype objects which takes an integer or a
+                                floating-point number and converts into a string type.
+                                Syntax: variableName.toString(); : 
+                                here, variableName is any variable which has number value.
+                            Ex: let value = 12;
+                                let newValue = value.toString(); //converts 12 to a "12" which is a string type
+                                console.log(newValue);          // "12"
+
+
+
