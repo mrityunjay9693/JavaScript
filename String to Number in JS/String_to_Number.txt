@@ -1,0 +1,30 @@
+Tytype conversion: In programming language, the process converting data set of one type to another type is called 
+                 type conversion.
+
+String to Number type conversin in JS:
+-> There are several situation where conversion of string type to number type is performed and JavaScript provides 
+   many features/built-in method as well as operator to convert string input to a number value. The concept in which
+   the conversion of string type to number type is known as "type conversion". Following are the ways to convert a
+   String type to Number type in JS are mentioned below:
+   1]Using parseInt() Function/Method.
+   3]Using parseFloat() Function/Method.
+   2]Using Number() Function/Method.
+   3]Using Unary(plus) Operator(+).
+   4]Using Math.Floor() Function/Method.
+   5]Multipy String with number 1.
+   6]Using Double tilde(~ ~) Operator.
+
+1]Using parseInt() method: The parseInt() method is used in JavaScript to convert the String type input to Number type.
+                           The parseInt() method/function takes takes a string and convert it into an integer value.
+                           The parseInt() method/function returns an integer value. If you pass a decimal value then
+                           it will return you integer value. It ignores the value after decimal point.    
+                           The parseInt() method/function takes two parameter mentioned as below:->
+                           a)String value: The first parameter is the input string value to be converted into integer.
+                           b)radix: The second parameter is radix value whic is used to represent base of the number 
+                                    into which the output will be displayed which contains numbers between 2 and 36.
+                                    The radix parameter is optional and if not pass as parameter then by default, its
+                                    value will be 10 i.e., decimal system.
+                           
+                           Syntax: parseInt(stringVariable, radix); or,
+                                   parseInt(stringVariable); 
+Note: Passing a non-string value as stringVariable will led to SyntaxError: Unexpected identifier.
