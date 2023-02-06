@@ -1,0 +1,55 @@
+Concatenation of Strings in JS: In JavaScript, the concatenation of strings is defined as the appending 
+                                the given one or more string to the end of another string and returning a
+                                new string. We can also defined it as "joining of two or more strings together
+                                and returning a new string as output". String concatenation is the process or 
+                                operation of joining character strings end-to-end.
+                                Ex1:    str1 = "Hello"
+                                        str2 = "World!"
+                                        newString = str1 + str2; // process/operation of concatenation 
+                                        console.log(newString);      
+                                output: HelloWorld!
+                                
+                                Ex2:    greet1 = "Good morning,";
+                                        greet2 = " Welcome to tilde!"
+                                        greetMe = greet1 + " " + greet2;
+                                        console.log(greetMe);
+                                output: Good morning, Welcome to tilde!     
+
+In JavaScript there are four ways to Concatenat Strings listed below: 
+1]Using the: '+' Operator.
+2]Using the: concat() method/function.
+3]Using the: array join() method/function. 
+4]Using the 'template literals'.
+
+Now, we will see each of the above ways to concatenate the given strings one by one:
+
+1]Using the: '+' Operator:->The '+' Operator is the most easiest/comfortable and mostly used way to concatenate the given 
+                            strings. The '+' operator concatenates/merges given two or more string together. Whenever 
+                            we use the plus operator to concatenate two given strings, it creates a new string by merging 
+                            the strings to the left and right of the operator. 
+                        ->  The '+' operator has exactly the same functionality just like we are adding two integers, we are
+                            also adding two or more strings in JavaScript using '+' operator and returning a new string.
+
+*Non-Mutative Concatenation Approach : ('+' operator)
+
+                        Ex: let firstName = "Mrityujay";
+                             let lastName = "Kumar";
+                             //let fullName = firstName + lastName;
+                             //console.log("Name:",fullName); // MrityunjayKumar
+                             let fullName = firstName + " " + lastName;
+                             console.log("Name:",fullName); // Mrityunjay Kumar   
+                        
+Mutative Concatenation Approach : ('+=' operator)
+                        Ex:1 let cityName = "Muzaffarpur";
+                             let stateName = "Bihar.";
+                             let intro = "I belongs to";
+                             intro += " " + cityName + ", " + stateName;
+                             console.log(intro);
+
+                        Ex:1 let countryCode = "91";
+                             countryCode += " is" + "India's country code."
+                             console.log(countryCode);
+
+
+
+
