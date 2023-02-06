@@ -39,3 +39,13 @@ console.log(valString);
 let input = "Is India's country code 91?";
 console.log(parseInt(input));
 console.log(typeof parseInt(input));
+
+// A] : With passing 1st parameter and second parameter(with radix parameter)
+// In below example, we will convert a string value to an integer suing parseInt() with second parameter(radix)
+
+let binaryValue = "1011";
+let decimalValue = parseInt(binaryValue, 2);
+console.log("1011 in integer:" + decimalValue);
+console.log(typeof decimalValue);
+
+//let value= "";
