@@ -32,3 +32,10 @@ console.log(intro);
 let countryCode = "91";
 countryCode += " is " + "India's country code."
 console.log(countryCode);
+
+let str = "Values: ";
+str += 42;
+str += " ";
+str += {};
+str += null;
+console.log(str);
