@@ -51,5 +51,43 @@ Mutative Concatenation Approach : ('+=' operator)
                              console.log(countryCode);
 
 
+2]Using the: concat() method/function: String.concat() method is an another way to concatenate two or more strings. The 
+                                       concat() method is used to concatenate/join/merge two or more string without 
+                                       canging the original given input string and it will return a new string.
+                                       The concat() method is a built-in method of JavaScript that accepts lists of strings 
+                                       as parameters and returns a new string after concatenation that means combination 
+                                       of all strings. If the parameters which are passed for concatenation are not strings,
+                                       then concat() method will first convert the parameter which is not string into string 
+                                       type and then finally the process of concatenation is done and then a new string is
+                                       returned by the method. Since JavaScript is immutable in nature, original string(input string) 
+                                       will not altered during the concatenation but a new string is returned as output that 
+                                       has all the input strings concatenated.
 
+        Syntax: 
+                string.concat(parameter1. parameter2,... parameter_n);
+                
+                Where, string : variable name has input string which has to be concatenated with the strings 
+                passes as parameter
+                parameter1,parameter2... parameter_n : parameters passes to the method that to be concatenated. 
 
+        Ex1: When value of input string and parameters have string type.
+                let str = "Good Morning";
+                let greet = str.concat(", ","Welcome to tilde.");
+                console.log(greet); 
+        Output: Good Morning, Welcome to tilde.
+
+      ->We can also concatenate values of an array to the end of given string value as input. While concatenating an array's 
+        value to a string, either pass the array with spread operator as parameter to concat() method, like(...arrayName) or 
+        without spread operator i.e., only passing array which has string values(like str.concat(arrayName) ) to concat method
+        that will unpacks all the items of the array as parameter inside concat() method.
+
+        Ex:Ex3: Concatenation of an Array of Strings values:
+                
+                let citiesName = ["Lucknow", "Kolkata", "Patna", "Bangalore", "Jaipur"];
+                let output = "Indian Cities: ".concat(citiesName);
+                let output1 = "Indian Cities: ".concat(...citiesName);
+                console.log(output);    
+                console.log(output1);  
+        Output: Indian Cities: Lucknow,Kolkata,Patna,Bangalore,Jaipur
+                Spread operator is used-> Indian Cities: LucknowKolkataPatnaBangaloreJaipur
+                
