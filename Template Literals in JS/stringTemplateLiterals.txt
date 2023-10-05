@@ -1,0 +1,39 @@
+Traditionally before ES6, we have two ways two create a string i.e., 
+a)using single quotation('string literals wrap using single quotes') and
+b)using double quotation('string literals wrap using single quotes'). 
+
+Using above mentioned ways, if we create strings then the strings have  have very limited functionalities and features.
+To overcome the limitations, ES6 provides a new way(features) to create a string i.e., "Template Literal"which gives a 
+programmer more control over dynamic string. After the ECMAScript6 or ES6 introduced/released, Template Literal comes 
+into existence which allows us to work with strings more easily, safely and cleanly. 
+
+Template literals:-> Template literals are such literals which is written/created within backtick(`literals`) 
+                     characters within which we are allowed to write strings and allowing for multi-line strings,
+                     untagged template literals results in strings which makes useful for string interpolation 
+                     and multiline strings, allowed us to embed expressions and special constructs called tagged
+                     tagged templates.
+                  -> Template literals in JavaScript are literals which is created with the help of backticks(``)
+                     characters within which we can write strings and add placeholders inside backticks characters
+                     (``).
+                  -> Template literals are also lnown as "template strings" and it is the informal name of template strings.
+                     This is because, we mostly work with strings and string interpolation within backtick(``) 
+                     characters.
+                  -> untagged template literals results in strings and tagged template literals may not results
+                     in string but it can be used with a customized tag function to perform whatever operation we
+                     want to perform on the different parts of the template literal.
+                  -> Template literals are ES6 new features added to JavaScript to create strings mainly with
+                     dynamic strings and it allows users to to embeded expression. These expressions can be a 
+                     number or a string or a variable or constant of any data type which is used inside placeholder.
+
+Placeholder: The placeholder in template literals are declared by the help of "${}"(read as dollar with curly braces). The 
+             placeholder is the programming entity which has some kind of values such as number, string, constant. The Variable, 
+             expression, a constant or arithmetic expression, etc which is written inside the curly braces attached with 
+             dollar($) sign is the placeholder and it can be the value of any data type.
+
+          -> ${placeholder}, Where placeholder : Variable, expression, a constant or arithmetic expression, etc
+             Ex:let studentName = `Mrityunjay Kumar` 
+                let totalMarks = 451;
+                let studentInfo = `Total marks of ${studentName} : ${totalMarks}`;
+                console.log(studentInfo);
+        Output: Total marks of Mrityunjay Kumar : 451
+        Here, studentName, totalMarks are the variables used here which are placeholders. 
