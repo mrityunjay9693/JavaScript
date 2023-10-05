@@ -37,3 +37,5 @@ Placeholder: The placeholder in template literals are declared by the help of "$
                 console.log(studentInfo);
         Output: Total marks of Mrityunjay Kumar : 451
         Here, studentName, totalMarks are the variables used here which are placeholders. 
+          ->If, you are unable to find out where is backtick sign available on the keyboard then, the you will get it on 
+            the top-left of the keyboard just below Esc key button and just above the tab key button. 
