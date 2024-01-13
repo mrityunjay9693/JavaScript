@@ -2,10 +2,15 @@ Traditionally before ES6, we have two ways two create a string i.e.,
 a)using single quotation('string literals wrap using single quotes') and
 b)using double quotation('string literals wrap using single quotes'). 
 
-Using above mentioned ways, if we create strings then the strings have  have very limited functionalities and features.
-To overcome the limitations, ES6 provides a new way(features) to create a string i.e., "Template Literal"which gives a 
+Using above mentioned ways, if we create strings then the strings have have very limited functionalities and features.
+To overcome the limitations, ES6 provides a new way(features) to create a string i.e., "Template Literal" which gives a 
 programmer more control over dynamic string. After the ECMAScript6 or ES6 introduced/released, Template Literal comes 
-into existence which allows us to work with strings more easily, safely and cleanly. 
+into existence which allows us to work with strings more easily, safely and cleanly.  
+We already created strings using single and double quotations, for eg: str1 = "String" and str2 = 'Strings'. Now using 
+backtick(``), we are able to create a string. So, there are three ways of writing string in JavaScript :->
+1)Using single quotation('string').
+2)Using double quotation("string").
+3)Using backtick(`string`).
 
 Template literals:-> Template literals are such literals which is written/created within backtick(`literals`) 
                      characters within which we are allowed to write strings and allowing for multi-line strings,
@@ -15,15 +20,60 @@ Template literals:-> Template literals are such literals which is written/create
                   -> Template literals in JavaScript are literals which is created with the help of backticks(``)
                      characters within which we can write strings and add placeholders inside backticks characters
                      (``).
-                  -> Template literals are also lnown as "template strings" and it is the informal name of template strings.
-                     This is because, we mostly work with strings and string interpolation within backtick(``) 
+                  -> Template literals are also lnown as "template strings" and it is the informal name of template 
+                     strings. This is because, we mostly work with strings and string interpolation within backtick(``) 
                      characters.
                   -> untagged template literals results in strings and tagged template literals may not results
                      in string but it can be used with a customized tag function to perform whatever operation we
                      want to perform on the different parts of the template literal.
                   -> Template literals are ES6 new features added to JavaScript to create strings mainly with
-                     dynamic strings and it allows users to to embeded expression. These expressions can be a 
+                     dynamic strings and it allows users to embeded expression. These expressions can be a 
                      number or a string or a variable or constant of any data type which is used inside placeholder.
+            Stntax:
+                     let/var/ varialeName = `string/text`;
+                  or `text/string`;  
+         Example: let str = `Template String.`;  // writing string inside backtick characters.
+                  console.log(str); // Template String.
+
+Let's understand the benefits of using backtick characters for writing string or template strings. In below example, we have
+information about a student i.e., its name, roll number, branch, College nameaddress. And we will return a statement as ouput,
+its information using double quotation or single quotation and return statement(output) will be like : 
+
+Output: My name is Mrityunjay Kumar, Roll number is MCAL0030, I am a MCA students of JainUniversity.
+
+Now, following is the code snippet in which student's information is taken and will be stored in the variable as shown below:
+
+   let studentName = "Mrityunjay Kumar,";
+   let rollNumber = "MCAL0030,";
+   let branch = "MCA";
+   let collegeName = "Jain University.";
+
+Now, if we want to achieve the above output, let's achieve this traditionally i.e., using double/single quotation, where 
+the resulting string is broken into parts. A string "My name is" is taken and it is concatenated with the studentName 
+input using "+" operator. Then an another string "Roll number is" is concatenated with rollNumber input and "I am a" is 
+concatenated with branch input and finally "students of" is concatenated with CollegeName input. All these concatenation
+is done using "+" operator. This whole process is looked like this:
+Return statement: 
+
+   console.log("My name is " + studentName + " Roll number is " + rollNumber + " I am a " + branch + " students of " + collegeName);
+
+The above return statement for result output which we are using to achieve the output is looks like very tedious work and time
+taking process. We can make it very simple, easier and time efficient work by using template literals where both string part 
+and inputs(i.e., studentName, rollNumber etc) are written within backtick characters. Here, inputs variable are embeded inside 
+backtick characters along with strings and this is an example of the statement "template literals allows us to embed expressions"
+
+Note : Here, input variables which are embed inside backtick(``) are the placeholder. Placeholder can contain variables or 
+       expression.
+
+Return statement using backtick characters:
+
+   console.log(`My name is ${studentName}` Roll number is ${rollNumber} I am a ${branch} students of ${collegeName}`)
+
+Output: My name is Mrityunjay Kumar Roll number is MCAL0030 I am a MCA students of JainUniversity.
+      
+      
+Examples: 
+
 
 Placeholder: The placeholder in template literals are declared by the help of "${}"(read as dollar with curly braces). The 
              placeholder is the programming entity which has some kind of values such as number, string, constant. The Variable, 
