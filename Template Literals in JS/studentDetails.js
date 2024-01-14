@@ -6,4 +6,11 @@ let rollNumber = "MCAL0030";
 let branch = "MCA";
 let collegeName = "Jain University";
 
-console.log(`My name is ${studentName}, Roll number is ${rollNumber}, and I am a ${branch} student of ${collegeName}`);
+//storing in a variable and then returned the statement.
+let detailStudent = `My name is ${studentName}, Roll number is ${rollNumber}, and I am a ${branch} student of ${collegeName}.`;
+console.log(detailStudent);
+
+//Returning the statement directly.
+console.log(
+  `My name is ${studentName}, Roll number is ${rollNumber}, and I am a ${branch} student of ${collegeName}.`
+);
