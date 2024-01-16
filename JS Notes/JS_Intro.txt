@@ -1,0 +1,8 @@
+JavaScript: JavaScript is a leight-weight, high-level interpreted programming language which is dynamic in nature. It is 
+            primarly used for building interactive and dynamic web-pages and web applications.
+           *JavaScript is a "backward compatible programming language". This means, it will support all the features which
+            came many years ago.
+           *JavaScript is not "forward compatible programming language". This means if you are using loder version of your 
+            browser and using current featuresof JS, then that features will not support in your browser with older 
+            version. You have to keep update your browser time to time.
+            
