@@ -1,0 +1,161 @@
+Data type: 
+
+Types of data types in JavaScript: In JavaScript, there are two types of data types mentioned as below:
+
+a)Primitive data types.
+b)Non-primitive data types.
+
+a)Primitive data types:
+
+There are seven(7) primitive data types available in JavaScript as shown below:
+
+1)Numbers
+2)BigInt
+3)String
+4)Boolean
+5)Undefined
+6)Null
+7)Symbol
+
+2)BigInt type:->BigInt was introduced in year 2020 and it is a new feature of ES11 JS version. BigInt is a 
+                primitive data type and built-in object in JavaScript which is used to store the numeric value
+                larger than 2^53-1(9007199254740991). Sometime we encounter cases like, storing the world population, 
+                number of stars in the galaxy or we need to store such numeric value which exceeds the largest safest
+                integer limit(2^53-1: read as two to power 53 minus one) then BigInt primitive data type is used to 
+                store such huge numbers and comes with memory constraints.
+              ->We know that in number type we can store values in decimal points, but we cann't do with the BigInt
+                type. It only store values without decimal that means, BigInt only represents whole number.
+              ->BigInt type stores value larger than (2^53-1) for positive and -(2^53-1) for negative.
+              ->BigInt type is just like other primitive data type such as number, String, symbol, boolean and null 
+                which stores larger whole numbers.
+              ->var, let and const are used with variable while declaring a variable for storing a BigInt type value
+                in the variable.  
+
+               Example1:var num1 = BigInt(123);
+                        console.log(num1);  //123n , here alphabet "n" is append with value with bigint type and 
+                                            //it is an identification that the input value is bigint type
+                        console.log(typeof num1); // bigint : its type is bigint.
+               
+               Example2:let value1 = 90071992547409911;
+                        console.log("value1: " + value1); //90071992547409900, a precision issue 
+
+Note:In the above example I have taken a numeric value in number type and there is a precision issue which is due 
+     to 90071992547409911 > 2^53. 
+     To avoid above precision issue due to input value greater than 2^53, BigInt is used which stores value greater 
+     than 2^53 and there is no issue like precision issue. The BigInt has no such limited precision like number type 
+     and BigInt doesn't has any such certain point, beyond which it will stop to represents like number type. In below
+     example we will see how we will use BigInt type to store larger data greater than 2^53. 
+     We will also use var, let, const while declaring a variable to bigint type one by one as shown below: 
+        Example:using var
+                var num1 = BigInt(1238408340830948033808043n);
+                console.log(num1); //1238408340830948033808043n 
+                console.log(typeof num1); // bigint : its type is bigint.
+Note:here alphabet "n" is append with value with bigint type and it is an identification that the input value 
+     is bigint type
+
+        Example:using let: input value i.e., 90071992547409911 is greater than 2^53-1 and is declare as bigint type.
+                let num2 = BigInt(890071992547409911n);
+                console.log(num2); //90071992547409911n
+                console.log(typeof num2); //type: bigint
+
+        Example:using const
+                const noOfStars = BigInt(10000000000);
+                console.log("Number of stars in Akash Ganga Galaxy:" + noOfStars + " billion"); //Number of stars in Akash Ganga Galaxy:10000000000 billion
+                console.log(typeof noOfStars); //type: bigint
+                console.log(noOfStars); //10000000000n
+ 
+ 
+
+
+Declaration of BigInt type: We can declare a variable of type BigInt, there are two ways we can do which is mentioned 
+below:
+    a)BigInt() constructor. 
+    b)By append "n" at the end of input value.
+
+    a)BigInt() constructor: To make any value as BigInt type, a BigInt() constructor can be called/used. To declare any 
+                            value a BigInt type, we pass the value as parameter in the BigInt() constructor to make it 
+                            a BigInt type value. 
+                            In JavaScript, while using BigInt() which is a constructor(a special function), 
+                            the new keyword is not used here with BigInt().
+
+                Syntax : var/let/const variableName = BigInt(value);
+                         Note: value - it is a whole/numeric number which is passed as an argument in BigInt() 
+                                       constructor to make/declare it a bigint type.
+
+                Example:using BigInt() constructor.
+                        let mobileNumber = BigInt(8002947572);
+                        console.log(mobileNumber); //8002947572n
+                        console.log(typeof mobileNumber); //type : bigint
+
+    b)By append "n" at the end of input value:To declare or to make a input numeric value as BigInt type you need to do
+                                              one thing, just append "n" to the end of input numeric value. Thus the 
+                                              value wil be declaed as bigint type.
+
+                Syntax: let/var/const variableName = 9007199254740991n;
+                        here, n is append with 9007199254740991 value so that variableName become a bigint type. 
+                        instead of 9007199254740991, any numeric value can be taken. It is just an exaple here in 
+                        the syntax.
+                
+                Example:By appending n to the end of input numeric value.
+                        let myNumber = 80029475728825160825n; //append n to the end of myNumber
+                        console.log(myNumber);               //80029475728825160825n
+                        console.log(typeof myNumber);       //type : bigint
+
+Note: We will see operation with BigInt type later after sometime. 
+
+5)undefined type->undefined in JavaScript is atype of Data type which means that the variable is declared 
+                  but any value has not been assigned in the varible. If a variable is declared but not 
+                  assigned with any value then JavaScript automatically assigns a value to the variable. 
+                ->Undefined is a global read-only variable which represents the value "undefined".
+                ->Undefined is a type of primitive type.
+                ->By default, the variable is stored with an undefined value.        
+                
+                Syntax: let/var variableName = undefined
+                    or, let/var variableName; //undefined
+                
+                Example:i)let myName;
+                          console.log(myName); //undefined
+                
+                        ii)let num = undefined;
+                           console.log(num);          // undefined
+                           console.group(typeof num); // Type : undefined
+
+                        ii)let myName;
+                           console.log(myName); 
+                           console.log(typeof myName); 
+                           *Both, num and myName contains undefined.
+
+
+6)Null type:->Null is another data type in JS, which indicates/tells that if a variable is null type then it does
+              not hold any value.
+            ->If a variable has null type, then the variable can be declared by var, let and const keyword and the 
+              variable is assigned to null value. 
+            ->The null type in JavaScript refers to an empty object pointer.
+ 
+    Syntax: let/const variableName = null;
+    
+            Example:let myValue = null;
+                    console.log(myValue);   //null
+
+          ->we can also alter the value of variable which is null as shwon in the next line
+            Example:myValue = 2024;
+                    console.log(myValue);
+
+          ->Now let's talk about a bug that is, if the value of variable is "null", then its type will be "object", 
+            as we all know object is completely different data type in JavaScript but actually a bug which is showing 
+            here.
+            Example:let myName = null;
+                    console.log(typeof myName); //object : a bug in JS   
+
+          ->Variable declared with "var" type can also store "null" value. variable having null value can also alter 
+            and we are able to modify its vaue
+            Example:var month = null;
+                    console.log(month);
+                    console.log(typeof month); //object : a bug here
+                    month = "October";  
+                    console.log(month);
+                    console.log(typeof month);
+
+
+
+
