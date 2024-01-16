@@ -12,6 +12,8 @@ backtick(``), we are able to create a string. So, there are three ways of writin
 2)Using double quotation("string").
 3)Using backtick(`string`).
 
+Note: The symbol `` is called backtick or grave accent. 
+
 Template literals:-> Template literals are such literals which is written/created within backtick(`literals`) 
                      characters within which we are allowed to write strings and allowing for multi-line strings,
                      untagged template literals results in strings which makes useful for string interpolation 
