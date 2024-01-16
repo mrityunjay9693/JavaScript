@@ -1,0 +1,18 @@
+Operator:In JavaScript, an operator is defined as the symbol or keyword which is used to performs an operation with
+         one or more than one operands to produce a value/result. Here, operands may be variables or values. 
+         Operators are the fundamental programming entity to the syntax of the language and these are used for various
+         purposes such as arithmetic calculation, comparing the multiple input values, assigning values, and many more.
+         From the very above statement, we can understand that operators play very crucial role in the programming 
+         language to build a complex programs.
+    
+    Example: i)5 + 6; : here, + is the operator and, 
+                        5,6 are the operands to which the operation is performed.
+            ii)x = 7; : here, = is the operator and,
+                        7 is the operands to which specific action is performed.
+           iii)sum = 6 + 7; here + and + are operators and,
+                            6,7 are the operands to which specific action is performed.
+
+Operands : 
+
+Notes: * Operator operates either side of the operands.
+       * 

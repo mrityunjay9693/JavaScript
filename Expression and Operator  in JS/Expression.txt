@@ -1,0 +1,36 @@
+Hello everyone. I welcome you all in the chapter of Expressions and Operator in JavaScript. Here we will explore all
+aspects of Expressions and operator in details like assignment, comparison, logical, bitwise and many more. Let's 
+disuss these things.
+
+Expression: Expression is defined as a block of code that produces a resultant value afer being evaluated or resolved
+            It consists of variable in which value to be stored, value and operators. An expression can be a literal,
+            or a single value and it can be a simple/complex combination of variables, operators, and literals. It is 
+            the essential part of JavaScript which is used by programmer to perform any operation, used to make a 
+            decision, creating more complex logic in the code. More than one expression can be combined together and 
+            nested to create sophisticated programs. 
+            
+            Examples: a)num = 20; //Assignment expression.
+                      b)x = 5 + 15; //combination of arithmetic and assignment expression.
+                      c)5+6; // arithmetic expression.
+                      d)x+y; //arithmetic expression.
+                      e)'5', 'Hello World', 'true', 'false', [1,3,4] // literals values. 
+        
+          ->We can clearly observed that there are possibly two types of expressions:
+            a)Expressions with Side Effects.
+            b)Purely Evaluating Expressions. 
+
+
+
+
+
+
+
+
+
+
+
+typeof Operator: The typeof operator in JavaScript is used to return the datatype of the operand in the form of string.
+                 The operand may be a literal or a data structure like a variable, a function or it may be an object.
+                 This operator is generally used, if we want to know or check the type of variable ehic used in the code.
+                 
+                 Syntax : typeof (operand); or typeof operand 
