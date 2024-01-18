@@ -15,4 +15,87 @@ Operator:In JavaScript, an operator is defined as the symbol or keyword which is
 Operands : 
 
 Notes: * Operator operates either side of the operands.
-       * 
+       * All complex expressions are joined by operators, such as =, + and many more.
+       * Operators are used to manipulate values and operands.
+       * Operators are used to compare values, arithmetic operations, decision making and many more.
+       * In JavaScript, operator and operands are the fundamentals for building a block of code to 
+         perform a specific task and used for manipulation on values.
+
+Operands: An operand is defined as such programming entity such a numeric value or a variable which is being operated
+          and manipulated is called operand. An operand a numeric value or variable which is acted by operator. 
+          Operator operates operands for manipulate them for specific result. In an expression, these are the inputs 
+          for the operators for an operation and the operators define how the operands will combined together and 
+          manipulated for a specific result.
+          Example:#1 let a =5;
+                  #2 let b = 6;
+                  #3 let sum = a + b;
+                  #4 let c = 2 + 6;
+                  #5 console.log(sum, c);
+          Output: 11, 8
+          Explanation: In the above example,we can see in line number 1 and 2, 5 and 6 are the operands which is assigned 
+                       in the variable a and b respectively by the assignment operator(=). And in line number 3, a and b
+                       are the operands whose values is manipulated by the plus(+) operator and get assigned to the sum operand
+                       by the assignment(=) operator. In line 4, 2 and 6 are the operands which representing the vaues and 
+                       plus(+) operator acts upon these values and get assigned in the variable c(an operand) by assignment 
+                       operator.
+                       5, 6, 2, 6, a, b, sum, c : Operands
+                       +, = : Operators
+
+Types of Operator in JavaScript : In JavaScript, based on different operations by the operators there are various 
+                                  following mentioned types of operators in JavaScript as shown below:
+                                  A)Assignment operator
+                                  B)Compariosn operators
+                                  c)Arithmetic operators
+                                  d)Bitwise operators
+                                  e)logical operator
+                                  f)BigInt operator
+                                  g)String operator
+                                  h)Conditional(ternary) operator
+                                  i)Comma operator
+                                  j)Unary operator
+                                  k)Relational operator
+
+A)Assignment operator:In JavaScript, the symbl "=" represents the assignment operator which is used to assign a specific
+                      value in a variable which is a left side operand. The value which is assigned in the variable is 
+                      another operand available at right side of the assignment operator. The assignment operator generally
+                      works with two operands which is avaiable either side of the operator. Ths assignment operator takes 
+                      the right side operand's value and assigns it to the right side operand which is basically a variable.
+                      The symbol "=" is the simple and basic assignment operator which we already used many times before.
+                      The right side operand may be either a value or a variable which has some value to be assigned to the
+                      left side operand. 
+                      
+                      Example:a)let num = 45;
+                                console.log(num);
+                                here, num and 45 are left side and right side operands respectively.
+                                      "=" is the assignment operator.
+                              
+                              b)let num1 = 12;
+                                let num2 = num1;
+                                console.log(num2); // num2 : 12
+                                here, both are the operand either side of the assignment operator.  
+
+->In the above examples, we have seen the simple and basic assignment operator work. Now, suppose we have a variable, num 
+  has the value 5(num = 5). Now, I told you to increase the value of num by 2. Here, we will do like this:
+  let num = 5;
+  num = num + 2;
+  In the above code, you have done your according to instruction that was told to you. But, if you were aware with the
+  compound assignment operator, which is the combination of mathmatical operation with the assignment then you will do 
+  something like this:
+  let num = 5;
+  num += 2; // num += 2 -> num = num + 2;  
+  
+->This is an example of compound assignment operator which is along with different other operator with simple assignment
+  operator. There are assignment operator which is a combined form of other operators along with assignment operators
+  as mentioned below:
+   i)Addition assignment operator.
+  ii)Subtraction assignment operator.
+ iii)Multiplication assignment operator.
+  iv)Division assignment operator.
+   v)Remainder assignment operator.
+  vi)Exponential assihnment operator.  
+ vii)Left shift assignment operator.
+viii)Right shift assignment operator.
+
+
+
+B)Compariosn Operator: 
