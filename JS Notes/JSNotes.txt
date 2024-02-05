@@ -1,10 +1,41 @@
-JavaScript: JavaScript is a leight-weight, high-level interpreted programming language which is dynamic in nature. It is 
-            primarly used for building interactive and dynamic web-pages and web applications.
-           *JavaScript is a "backward compatible programming language". This means, it will support all the features which
+JavaScript: JavaScript is a leight-weight, high-level, and interpreted programming language which is compatible with the
+            object-oriented and functional programming approach. JavaScript is popular for the language of dynamic in 
+            nature. It is primarly used for building interactive and dynamic web-pages and web applications. The JavaScript
+            is completely different from the Java programming language. JS has nothing to do with Java. Syntax of both 
+            language is completely different from each other. Both has its own specific identity and features.
+          ->JavaScript has started its journey since its birth as scripting lamguage roots and as the couple of decade 
+            passes scince its birth, it evolves itself towards efficient general-purpose programming language which now
+            become suitable for serious software engineering and application develpment. It has now huge codebases and rich
+            community has has all answer related to issues while developing application with JavaScript. In simple word, 
+            it has rich community and become a idol for professionals. 
+          ->JavaScript is the primarly known for the programming language of the job.
+          ->JavaScript is a "backward compatible programming language". This means, it will support all the features which
             came many years ago.
-           *JavaScript is not "forward compatible programming language". This means if you are using loder version of your 
+          ->JavaScript is not "forward compatible programming language". This means if you are using older version of your 
             browser and using current featuresof JS, then that features will not support in your browser with older 
             version. You have to keep update your browser time to time.
+          ->For any programming language, to be useful they need a dedicated platform, rich standard library, and need of 
+            basic input and output to perform and these things were absence in JavaScript since its birth till the day 
+            node arrives. It is important to note that, core JavaScript languages state a minimal API that works with 
+            numbers, text, arrays, map, and many more such things which provides only essential functionalities required for
+            a specific purpose, bit the core JavaScript was unable to provide taking input and output functionality for the
+            user. Not only, input/output but also some more sophisticated features such as networking, storage, and graphics.
+            It was browser responsibility to take input/output functionality. Then browser were the "host environment" for
+            the JavaScript in which it is embedded. It is the browser which is the original host environment for the JS and
+            still, the most common and widely used execution environment for JavaScript where the programmer interprets 
+            their code, doing input/output and debugging codes.  
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ****************************************************Variables**************************************************************

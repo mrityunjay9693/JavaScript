@@ -1,4 +1,6 @@
-Data type: 
+Data type: Data type is defined as the identification of a variable which specifies that what kind of values the
+           the variable can store. It is the basic information about the variable that a particular type of value
+           will be input in the variable. 
 
 Types of data types in JavaScript: In JavaScript, there are two types of data types mentioned as below:
 

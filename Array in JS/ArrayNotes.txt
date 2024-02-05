@@ -1,0 +1,20 @@
+In my point of view, this is very common to think and discuss about, why do we need array for storing datas and values,
+if we have variables to store any type of values entered by user, then why array?
+Let's get dive into this question with the help of example. Let us take we need to store marks of three students as shown 
+here: 
+Example:let marksOfStudent1 = 85;
+        let marksOfStudent2 = 95;
+        let marksOfStudent3 = 97;
+        console.log("Marks of Students: ");
+        console.log(marksOfStudent1);
+        console.log(marksOfStudent2);
+        console.log(marksOfStudent3);
+
+Now, suppose principle told to display marks of three more students. Then this looks not much easy task. Again declaring 
+three more varibles and three more console.log() statement to displayed the marks of another three respective students. 
+Actually, here the user has to display the marks of students individually i.e., one by one and ofcurse this is a time 
+taking process to be done. The user has written the code for each student's marks individually and it is quite time taking
+and boring task to do. And, if you observed about the marks of students, these are the values of same type i.e., 
+the. Now, let's considered, if we have more than 500 students. Just think, you as a user told to write code for entering
+and displaying the marks of more than 500 students. Isn't the hectic and time taking task for you to declare each variables
+and storing marks in all respective variables and then displaying 500+ times. Ohh God, its too hectic to do.  

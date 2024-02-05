@@ -10,8 +10,6 @@ Variables:->Variable in JavaScript is the most basic building block programming 
               a)store information.
               b)and,these information can be used in the program later 
               c)and, if possible, can be altred/changed. 
-          
-          ->Variable name in JavaScript in case-sensitive.
     
  Creation/Declaration of Variable in JS :
         ->Systax : 

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+
+        form{
+            width: 550px;
+            margin: auto;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            padding: 10px;
+        }
+        h2{
+            padding: 20px;
+        }
+        form label{
+            display: block;
+            font-size: 16px;
+            
+        }
+        form input{
+           width: 100%;
+           height: 30px;
+           margin-bottom: 10px ;
+        }
+        form button{
+            padding: 10px 25px;
+            background-color:rgb(51, 255, 126);
+            color: black ;
+            border: none;
+            cursor: pointer;
+        
+        }
+        .main{
+            width: 1320px;
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto; 
+        }
+        .items{
+            flex-basis: 23%;
+            margin: 1px;
+            box-shadow: 0px 0px 10px 2px #ccc;
+            padding: 1%;
+            position:relative;
+        }
+        .items h5{
+            margin-top: 10px;
+        }
+        .items span{
+            position: absolute;
+            font-size: 30px;
+            cursor: pointer;
+            right: 0px;
+            top: 0px;
+
+        }
+    </style>
+</hea 
+<body>
+    <form>
+       <h2>Appointment Booking</h2>
+       <label for="">Name</label>
+       <input type="text" name="uname">
+       <label for="">Email</label>
+       <input type="email" name="email">
+       <label for="">phone</label>
+       <input type="phone" name="phone">
+       <button>Save</button>
+
+       <!-- we need a design which help us to save the data into the proper formate
+        -->
+      <div class="main">
+        
+      </div>
+    </form>
+
+    <script>
+        // yaha pr ham kya krenge ?
+        // agr hamko form ka data mil jaye tbhi to ham usko local storage me save krenge 
+        // to uske liye pahile hm form ko submit krenge 
+        // jis se ki form ka data mil jaye 
+        //----------------------------------
+        let main = document.querySelector(".main");
+        //DOM ka use kr ke pahile ham form ko le lete hai
+
+        let form = document.querySelector('form');// yaha se mmera form target ho gya hai
+        // now we can apply event listener to the  form 
+
+        // to kamko kya krna hai ?
+        // hamko form ko submit krwana hai 
+        // to -->
+        form.addEventListener('submit',(event)=>{
+            // to ho kya rha hai jab bhi ham form ko submit krte hai t b tb ye page ko refresh kr de rha hai
+              // then we will use 
+              //console.log(event);//--> ye ek event show krega o sub chiz form se related hai ...
+                
+            //------------------------------------------------------------------------------------
+            //****************don't Read ***************
+
+            // ---------------->  //{bhai tu saman le ke pahuch bande log ghush gye hai
+            // are baby tu nikal yaha se }
+              //------------------------------------------------------------------------------------- 
+
+
+            //   event.preventDefault();//-->ab es se kya hoga bhai?
+              // es se ye hoga ki jo bhi hm data form se liye the usko submit hone se roke gaa aur hamara page refresh krne se bach jayega
+
+            // the main work of event.preventDefault is cancelled the event.
+
+            // ab data ko uthana hai to o kaise hoga ? data uthane ka mtlb hota hai usko access kr lena 
+
+            // agr name wala jagah pr jo user diya hai usko uthana hai to kya krenge ham 
+
+            //  let name = event.target.uname;// [ event.target.  > uske badd ham name denge jo ki hma already html file me de chuke hai ]
+
+    let name = event.target.uname.value;
+    // console.log(name);
+
+    let email = event.target.email.value;
+    let phone = event.target.phone.value;
+
+    // console.log(name);
+    // console.log(email);
+    // console.log(phone);
+
+    // now we hvae to work on submit button 
+    // and when submit button is clicked our data shoud be submitted and save into the local storage.
+
+    // so  to store the data into the local storage we have a function 
+    //-->localStorage --> it is a object  and setItem()--> method that use to send the data 
+
+
+     
+
+    //localStorage.setItem()// jab bhi ye data leta hai o string ke format me leta hai aur key-value pair me leta hai 
+    // key jo hota hai wah hota hai o basically local Storage ka nam hota hai hm kuchh bhi de skte hai 
+
+    // hamare case me ham  key ka nam -->  userDetails  diye hai jo ki local storage ka man bhi ho jayega 
+    
+    // chuki hm single data to de nhi rhe hai jo hm ek bar localStorage.getItem() kr ke value pass kr le yaha pr multiple data hai
+    // to hmm ek kam krtehai 
+    // pahile hm ek array bnate hai 
+    // usme data ko array ke format me rakhate hai 
+    // phir us Array ko hm string me convert kr lenge aur o string [localStorage.getItem()] -> method me pass kr denge 
+
+
+    // lekin jb hm ek bar store kr ke dubara krte hai data ko sotre tb hamara puaran data delete ho jata hai sayd aur new aa jata hai
+
+    // purana data ko loss hone se bachane ke liye hm ek kam kr sakte hai 
+
+    // pahile jo para huaa hai data usko le lenge aur usi me concatinate kr denge new  data ko
+
+
+     //------------------------------------------------------------------------------------
+     //****************don't Read ***************
+
+     // --->  //{bhai tu saman le ke pahuch bande log ghush gye hai
+            // are baby tu nikal yaha se 
+        // ham log ke mommy papa jante hai 
+    // jo krna hai kl lo..... }
+     //------------------------------------------------------------------------------------- 
+
+     
+     // ha to kaise krenge hm ye sub  
+     // first we will create a new array 
+     var userData = JSON.parse(localStorage.getItem("userDetails")) ?? [];
+     // ?? -> null handling operator
+     userData.push(
+        {
+            'name' :  name,
+            'email' : email,
+            'phone' : phone
+
+         }  
+     )
+
+     localStorage.setItem("userDetails", JSON.stringify(userData));
+
+     // ab jo hmara data local storage me hau usko hm webpage pr display krenge 
+
+     // kaise krenge ???
+      
+
+
+  
+
+    // but befor going to store the data we have main fact 
+    // at this point my local storage is empty
+
+    // so first we have to create A NAME for my local storage
+       event.target.reset();
+        displayData();
+
+
+        event.preventDefault(); 
+        
+        })
+
+     // so we will target the main div 
+     // bcz inside main dive we have to my data 
+   
+
+        let displayData = ()=>{
+            let userData = JSON.parse(localStorage.getItem("userDetails")) ?? [];
+              let finalData=''
+
+              userData.forEach((ele , idx)=>{
+                finalData += `<div class="items">
+                    <span onclick = 'removeData(${idx})'>&times;</span>
+
+                    <h5>Name</h5>
+                    <div >${ele.name}</div>
+
+                    <h5>Email</h5>
+                    <div>a${ele.email}</div>
+
+                    <h5>phone</h5>
+                    <div>${ele.phone}</div>
+
+                  </div>`
+              });
+            //  console.log(finalData);
+              main.innerHTML = finalData;
+             
+        }
+
+        let removeData = (idx) => {
+            let userData = JSON.parse(localStorage.getItem("userDetails")) ?? [];
+            userData.splice(idx, 1);
+
+            localStorage.setItem("userDetails", JSON.stringify(userData));
+            displayData();
+        }
+
+
+        displayData();
+    </script>
+
+</body>
+</html>
