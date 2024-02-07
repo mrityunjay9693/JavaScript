@@ -10,11 +10,35 @@ Example:let marksOfStudent1 = 85;
         console.log(marksOfStudent2);
         console.log(marksOfStudent3);
 
-Now, suppose principle told to display marks of three more students. Then this looks not much easy task. Again declaring 
-three more varibles and three more console.log() statement to displayed the marks of another three respective students. 
-Actually, here the user has to display the marks of students individually i.e., one by one and ofcurse this is a time 
-taking process to be done. The user has written the code for each student's marks individually and it is quite time taking
-and boring task to do. And, if you observed about the marks of students, these are the values of same type i.e., 
-the. Now, let's considered, if we have more than 500 students. Just think, you as a user told to write code for entering
-and displaying the marks of more than 500 students. Isn't the hectic and time taking task for you to declare each variables
-and storing marks in all respective variables and then displaying 500+ times. Ohh God, its too hectic to do.  
+Now, suppose principle told to display marks of three more students. At this time, the task doesn't looks much hetic and 
+again declaring three more varibles along with three more console.log() statement to store and display the marks of another 
+three respective students. If there is instruction to store and display marks of another 50 studets, then again writing code
+for each students i.e., for another 50 students individually, which is very quite boring an dtime taking task. Actually, the
+user has to store and display the marks of each students individually i.e., one by one and which is ofcurse a time taking and
+boring and unnecessary task to do. Now, let's considered, if we have more than 500 students. Just think, as a user you are 
+told to write code for more than 500 students. Isn't the hectic and time taking task for you. Declaring variables, storing 
+marks and then displaying values for 500+ times. Ohh God, its too hectic to do. And, if you observed about the marks of 
+students, these are the values of same type i.e., the number type. Thus, we are in such situation where there is a need of 
+something which is capable of storing such huge number of values, for example marks of 500 students and solve the problem
+and hence we don't need to write code for each values/elements individually. Thus the term "Array" is coined, which is capable
+of storing and displaying several number of values/elements together under a single variable name. Let's discuss array in 
+depth.
+
+Array : In JavaScript, array is a single variable as well as the most basic data structure and a special type of object to 
+        store and manipulate ordered collection of values of same or different datatypes. An array is used to store a collection
+        of ordered values/elements of same or different types. 
+      ->An array is an ordered collection of values.
+      ->Arrays in JavaScript are dynamic in nature i.e., JavaScript arrays are resizable. They can grow or shrink as needed 
+        and hence, there is no need of declaring its fixed size while creating the array.
+      ->JavaScript arrays are not associative arrays in nature.
+      ->Each value in JavaScript array is called an element and each element has a numeric position in the array, which is 
+        known as its index.
+      ->JavaScript arrays are zero-based indexing and 32-bit indexes. The first element is at index 0, second is at 2
+        and so on. The highest possible index is 4294967294(2^32-2).
+ 
+Syntax for Declaration of an Array: There are two ways for creating an empty array :
+                                      1] let arrayName = [];
+                                      2] let arrayName = new Array(); 
+
+
+
