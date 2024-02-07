@@ -26,7 +26,7 @@ depth.
 
 Array : In JavaScript, array is a single variable as well as the most basic data structure and a special type of object to 
         store and manipulate ordered collection of values of same or different datatypes. An array is used to store a collection
-        of ordered values/elements of same or different types. 
+        of ordered values/elements of same or different types in a single variable.
       ->An array is an ordered collection of values.
       ->Arrays in JavaScript are dynamic in nature i.e., JavaScript arrays are resizable. They can grow or shrink as needed 
         and hence, there is no need of declaring its fixed size while creating the array.
