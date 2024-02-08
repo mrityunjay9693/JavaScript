@@ -1,14 +1,14 @@
-In my point of view, this is very common to think and discuss about, why do we need array for storing datas and 
-values, if we have variables to store any type of values entered by user, then why array?
-Let's get dive into this question with the help of example. Let us take we need to store marks of three students 
-as shown here: 
-Example:let marksOfStudent1 = 85;
-        let marksOfStudent2 = 95;
-        let marksOfStudent3 = 97;
-        console.log("Marks of Students: ");
-        console.log(marksOfStudent1);
-        console.log(marksOfStudent2);
-        console.log(marksOfStudent3);
+Introduction: In my point of view, this is very common to think and discuss about, why do we need array for storing datas 
+              and values, if we have variables to store any type of values entered by user, then why array?
+              Let's get dive into this question with the help of example. Let us take we need to store marks of three 
+              students as shown here: 
+      Example:let marksOfStudent1 = 85;
+              let marksOfStudent2 = 95;
+              let marksOfStudent3 = 97;
+              console.log("Marks of Students: ");
+              console.log(marksOfStudent1);
+              console.log(marksOfStudent2);
+              console.log(marksOfStudent3);
 
 Now, suppose principle told to display marks of three more students. At this time, the task doesn't looks much
 hetic and again declaring three more varibles along with three more console.log() statement to store and display
@@ -25,7 +25,11 @@ hence we don't need to write code for each values/elements individually. Thus th
 capableof storing and displaying several number of values/elements together under a single variable name. Let's 
 discuss array in depth.
 
-Array : In JavaScript, array is a single variable as well as the most basic data structure and a special type of 
+Array : Array is the most basic and special data structure to store ordered multiple items.JavaScript Arrays are the 
+        objects which is sued to store multiple items/values irrespective of their data types under a single variable. 
+        In fact, Arrys not only provide a way to store multiple values but it also provide a way to access them randomly 
+        in constant time which is O(1) timme cmplexity. 
+      ->In JavaScript, array is a single variable as well as the most basic data structure and a special type of 
         object to store and manipulate ordered collection of values of same or different datatypes. An array is 
         used to store a collection of ordered values/elements of same or different types in a single variable.
       ->An array is an ordered collection of values.
@@ -36,10 +40,31 @@ Array : In JavaScript, array is a single variable as well as the most basic data
         which is known as its index.
       ->JavaScript arrays are zero-based indexing and 32-bit indexes. The first element is at index 0, second is at 2
         and so on. The highest possible index is 4294967294(2^32-2).
+      ->Whenever we want to store multipe items/values in a single variable, then array is used. It can store values of
+        same data type as well as it consists of values of different types.
+      ->In JavaScript, elements of array has an index which is associated with it and using the index, the respective value
+        of the array can be accessed. Like other programming language, in JS index of array start with 0 and index of last 
+        element is (n-1), where n is the size of the array.      
+
+        Examples : let arr = [12, 21, 90, "Hello", "World", null, True]; 
+                     index =  0    1   2      3       4      5     6
+                     name of array : arr
+                     size(n) : 7
+                     first index : 0
+                     last index : (n-1) => (7-1) => 6  
+
+Notes: In other programming languages, multiple items/values is stored in arrays, but those items should be of same data 
+types. We cannot add a string value in an array of integer(number in JS) type. But, in JavaScript, we can add multiple
+items of different datat tpes. In JS, we can add a string value in an array having other items of string, null, undefined, 
+and float types as well as the array also has a separate array. We have the privilegeto store any data type in an array be 
+it number, string, null,undefined float, or even an array can be stored inside an array.      
  
-Syntax for Declaration of an Array: There are two ways for creating an empty array :
-                                      1] let arrayName = [];
-                                      2] let arrayName = new Array(); 
+Declaration of an Array: There are two ways for creating an empty array :
+                                      1]let arrayName = [];  
+                                          Example: let fruits = ["Apple","Orange","Coconut","Lichi"]; 
+                                      
+                                      2]let arrayName = new Array(); 
+                                          Example: let fruits = new Array();    
 
 
 
