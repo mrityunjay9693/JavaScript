@@ -5,6 +5,9 @@ let arr = []; // Array is declared without any value inside it i.e., an empty ar
 console.log("Empty array: ");
 console.log(arr);
 
+const greet = ["Hello", "Welcome", "to", "tilde~"];
+console.log(greet);
+
 let fruits = ["Apple", "Orange", "Mango", "Lichi"];
 console.log(fruits);
 
