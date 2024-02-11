@@ -63,20 +63,42 @@ it number, string, null,undefined float, or even an array can be stored inside a
  
 Declaration of an Array:We can create/declare array either by using Array constructor or using the JavaScript Array literal
                         which is shown below with syntax:
-                      1]Using JavaScript Array Literal:
+                      1]Using JavaScript Array Literal.
+                      2]Using Array Constructor(using new keyword):
+1]Using JavaScript Array Literal:
                         Syntax : let arrayName = [];  
                         
-                        Example: let fruits = ["Apple","Orange","Coconut","Lichi"]; 
-                                 console.log(fruits)    
-                      2]Using Array Constructor:
-                        Syntax : let arrayName = new Array(); 
+                      Example:a)const arr = ["Hello", "Welcome", "to", "tilde~"];
+                                console.log(arr);
+                                let fruits = ["Apple","Orange","Coconut","Lichi"]; 
+                                console.log(fruits)   
+2]Using Array Constructor(using new keyword): Since array in JavaSCript is an object. Thus we can create an array using array
+                                              constructor Where new keyword is used along with array constructor. This 
+                                              approach allows for the instantiation of a new array object which provide the 
+                                              flexibility to initialize it with a value or let it be an empty for later 
+                                              population. 
+                                            ->Syntax : let arrayName = new Array(); 
                         
-                        Example: let fruits = new Array(4);
-                                 fruits[0] = "Apple";
-                                 fruits[1] = "Orange";
-                                 fruits[2] = "Coconut";
-                                 fruits[3] = "Lichi";
-                                 console.log(fruits);    
+                                              Example: let fruits = new Array(4);
+                                                        fruits[0] = "Apple";
+                                                        fruits[1] = "Orange";
+                                                        fruits[2] = "Coconut";
+                                                        fruits[3] = "Lichi";
+                                                        console.log(fruits); 
+                                              
+                                            ->While creating an array using array constructor we can either:
+                                              a)create an empty array by invoking the array constructor with the new keyword 
+                                                Example: let fruits = new Array(4); //empty array of size four(4)
+                                                         fruits[0] = "Apple";
+                                                         fruits[1] = "Orange";
+                                                         fruits[2] = "Coconut";
+                                                         fruits[3] = "Lichi";
+                                                         console.log(fruits); 
+                                              or,
+                                              b)we can also create an array with initial values by passing the values as 
+                                                arguments to the array constructor. 
+                                                Example: let fruits = new Array("Apple", "Orange", "Coconut", "Lichi");
+                                                         console.log(fruits);    
 
 Note: It is recommended that, to create an array use JavaScript array literal and should avoid declaring/creating array 
       using array constructor. This is because, new keyword is quite slow due to calling of array constructor while array 
