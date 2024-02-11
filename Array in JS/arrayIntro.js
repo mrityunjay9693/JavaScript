@@ -11,17 +11,19 @@ console.log(greet);
 let fruits = ["Apple", "Orange", "Mango", "Lichi"];
 console.log(fruits);
 
-//2.Using Array Constructor
+//2.Using Array Constructor:
 //Syntax : let/var arrayName = new Array(size);
-let num = new Array(5, 4, 6, 9);
-console.log(num);
-
-let cityName = new Array(4);
+//An empty array is created by invoking the array constructor with the new keyword. 
+let cityName = new Array(4); // An empty array of size 4
 cityName[0] = "Muzaffarpur";
 cityName[1] = "Bhagalpur";
 cityName[2] = "Patna";
 cityName[3] = "Darbangha";
 console.log(cityName);
+
+//we can also create an array with initial values by passing the values as arguments to the array constructor
+let num = new Array(5, 4, 6, 9);
+console.log(num);
 
 // Array having items of same data type.
 let stateName = ["Bihar", "Madhya Pradesh", "Gujrat", "Punjab", "Haryana"];
