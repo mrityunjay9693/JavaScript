@@ -27,3 +27,8 @@ console.log(stateName);
 // Array having items of different data type.
 let aboutLaptop = ["Lenovo", 56000, true, "black", undefined, null];
 console.log(aboutLaptop);
+
+
+//We can even stodre an array in JavaSCript's arrays as shown in below example:
+let carsDetails = [["BMW", "Audi", "Mahindra"], "Black", "150 KMPH", 40];
+console.log(carsDetails);
