@@ -11,3 +11,4 @@ console.log("Total number of cars: " + lengthOfCars);
 let num = [10, 39, 578, 7, 0, 89];
 console.log("Total number of values: " + num.length);
 console.log(num.length);
+    
