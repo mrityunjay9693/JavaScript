@@ -52,6 +52,7 @@ Array : Array is the most basic and special data structure to store ordered mult
                      size(n) : 7
                      first index : 0
                      last index : (n-1) => (7-1) => 6  
+                  
 
 Notes: In other programming languages, multiple items/values is stored in arrays, but those items should be of same data 
 types. We cannot add a string value in an array of integer(number in JS) type. But, in JavaScript, we can add multiple
@@ -59,12 +60,37 @@ items of different datat tpes. In JS, we can add a string value in an array havi
 and float types as well as the array also has a separate array. We have the privilegeto store any data type in an array be 
 it number, string, null,undefined float, or even an array can be stored inside an array.      
  
-Declaration of an Array: There are two ways for creating an empty array :
-                                      1]let arrayName = [];  
-                                          Example: let fruits = ["Apple","Orange","Coconut","Lichi"]; 
-                                      
-                                      2]let arrayName = new Array(); 
-                                          Example: let fruits = new Array();    
+Declaration of an Array:We can create/declare array either by using Array constructor or using the JavaScript Array literal
+                        which is shown below with syntax:
+                      1]Using JavaScript Array Literal:
+                        Syntax : let arrayName = [];  
+                        
+                        Example: let fruits = ["Apple","Orange","Coconut","Lichi"]; 
+                                 console.log(fruits)    
+                      2]Using Array Constructor:
+                        Syntax : let arrayName = new Array(); 
+                        
+                        Example: let fruits = new Array(4);
+                                 fruits[0] = "Apple";
+                                 fruits[1] = "Orange";
+                                 fruits[2] = "Coconut";
+                                 fruits[3] = "Lichi";
+                                 console.log(fruits);    
 
+Note: It is recommended that, to create an array use JavaScript array literal and should avoid declaring/creating array 
+      using array constructor. This is because, new keyword is quite slow due to calling of array constructor while array 
+      literal is much faster as well as it is readable than array constructor.  
 
+->Arrays in JavaScript having items of same data-types as shown below.
+  Example : let studentName = ["Mrityunjay kumar", "Mrinal Sauraj", "Vani", "Sushma"]; // items of string type.
+            console.log(studentName);
 
+->Arrays in JavaScript also having items of different types. Let's understand following example: 
+  Example : let studentInformation = ["Mrityunjay Kumar, "MCAL0030", 98.36, 11, undefined];
+            console.log(studentInformation);
+
+            let laptop = ["Lenovo", 56000, true, "black", undefined, null];
+            console.log(laptop);
+
+->We can even stodre an array in JavaSCript's arrays as shown in below example:
+  Example : let carsDetails = [["BMW", "Audi, "Mahindra"], "Black", "150 KMPH", 40]; 
