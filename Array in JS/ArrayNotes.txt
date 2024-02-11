@@ -45,6 +45,7 @@ Array : Array is the most basic and special data structure to store ordered mult
       ->In JavaScript, elements of array has an index which is associated with it and using the index, the respective value
         of the array can be accessed. Like other programming language, in JS index of array start with 0 and index of last 
         element is (n-1), where n is the size of the array.      
+      ->JavaScript arrays can dynamically grow or shrink in size as elements are added or removed.  
 
         Examples : let arr = [12, 21, 90, "Hello", "World", null, True]; 
                      index =  0    1   2      3       4      5     6
@@ -94,3 +95,35 @@ Note: It is recommended that, to create an array use JavaScript array literal an
 
 ->We can even stodre an array in JavaSCript's arrays as shown in below example:
   Example : let carsDetails = [["BMW", "Audi, "Mahindra"], "Black", "150 KMPH", 40]; 
+
+Now, let us talk about some terminologies that is generally spoken while discussing JavaScript arrays mentioned as below: 
+1.Array Element.
+2.Array Index.
+3.Array Length.
+
+1.Array Element : An individual value/item which is available inside an array is known as array element. And each element
+                  in an array can be accessed by its unique index.
+                  Example: 
+                          let num = [11, 23, 34, 100];
+                              here, 11, 23, 34, 100 are the array's element.
+                          
+2.Array Index : Array index is a numeric representation for an array element's position within the array. JavaScript array
+                is zero-based indexing which means, index start from 0 i.e., array's first element is 0, second element is 
+                1, third element is 2, and so on. Its last index value will be length minus one(length-1). Array index is a 
+                crucial concept which is used for unique identification and accessing the element of an array by specifying 
+                its position in an array.
+                Example: 
+                        let num = [11, 23, 34, 100];
+                           index->  0   1   2   3
+
+3.Array Length : Array length represents the total number of elements stored/available within an array. It is generally used
+                 to count or identify about the total number of elements/values stored within an array. JavaSCript provides 
+                 us a specific property/method i.e., length property which is used directly in the program to calculate the 
+                 length of an array. Below is an example to calculate length of an array.
+                 Example:
+                         let myCars = ["BMW", "Audi" "Brezza", "Mahindra"];
+                         let lengthOfCars = myCars.length;
+                         console.log("Total Length of myCars: " + lengthOfCars); // Total Length of myCars: 4
+
+                         let num = [10, 20, 50, 76, 55];
+                         console.log(num.length); //5
