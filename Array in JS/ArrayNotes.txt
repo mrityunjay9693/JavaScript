@@ -149,3 +149,5 @@ Now, let us talk about some terminologies that is generally spoken while discuss
 
                          let num = [10, 20, 50, 76, 55];
                          console.log(num.length); //5
+
+

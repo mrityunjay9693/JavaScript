@@ -1,5 +1,0 @@
-typeof Operator: The typeof operator in JavaScript is used to return the datatype of the operand in the form of string.
-                 The operand may be a literal or a data structure like a variable, a function or it may be an object.
-                 This operator is generally used, if we want to know or check the type of variable ehic used in the code.
-                 
-                 Syntax : typeof (operand); or typeof operand 
