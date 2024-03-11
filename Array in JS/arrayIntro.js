@@ -1,15 +1,22 @@
 //Array Declaration:
 //1.Using JS Array Literal
-//Syntax : let/var arrayName = [value1, value2, value3, ...nth_value]
+//Syntax : let/var/const arrayName = [value1, value2, value3, ...nth_value]
+
 let arr = []; // Array is declared without any value inside it i.e., an empty array
 console.log("Empty array: ");
 console.log(arr);
 
-const greet = ["Hello", "Welcome", "to", "tilde~"];
-console.log(greet);
-
+//array using let keyword.
 let fruits = ["Apple", "Orange", "Mango", "Lichi"];
 console.log(fruits);
+
+//array using var keyword.
+var seasonNames = ["Summer", "Winter", "Rainy season", "Spring"];
+console.log(seasonNames);
+
+//array using const keyword.
+const greet = ["Hello", "Welcome", "to", "tilde~"];
+console.log(greet);
 
 //2.Using Array Constructor:
 //Syntax : let/var arrayName = new Array(size);
@@ -37,3 +44,4 @@ console.log(aboutLaptop);
 //We can even stodre an array in JavaSCript's arrays as shown in below example:
 let carsDetails = [["BMW", "Audi", "Mahindra"], "Black", "150 KMPH", 40];
 console.log(carsDetails);
+
