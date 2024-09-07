@@ -9,9 +9,10 @@
  * We can pass multiple values to console.log() function and it will print them in the order they are passed.
  * 
  */
-console.log("This is begining of JavaScript journey."); 
-console.log("Hello World")      /* 
-                                    to terminate line use semi-colon or without semi-colon. Using semi-colon is a 
+console.log("This is begining of JavaScript journey."); // In JS, string is written within double quotation 
+console.log('Hello World')                              // as well as single quotes     
+                                /* 
+                                    We can terminate line use semi-colon or without semi-colon. Using semi-colon is a 
                                     good pracice.  
                                 */
 console.log('Welcome to tilde.'); // We can write string data inside double quotation as well as single quotation

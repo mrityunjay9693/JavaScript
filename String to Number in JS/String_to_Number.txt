@@ -1,5 +1,5 @@
 Tytype conversion: In programming language, the process converting data set of one type to another type is called 
-                 type conversion.
+                   type conversion.
 
 String to Number type conversin in JS:
 -> There are several situation where conversion of string type to number type is performed and JavaScript provides 

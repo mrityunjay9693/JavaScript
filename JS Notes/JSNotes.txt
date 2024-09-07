@@ -26,9 +26,58 @@ JavaScript: JavaScript is a leight-weight, high-level, and interpreted programmi
             their code, doing input/output and debugging codes.  
 
 
+->In JavaScript, to print anything(a message, value..etc) to the console using the "console.log()" function(method).
+  Whatever is given to this function, let's say a message, inside it's parenthesis, it will output the message to the
+  browser's console.
 
+console.log() : console.log() is a method in JavaScript used to print or display messages to the browser's console.
+                It is primarily used for debugging purposes by developers to output information, variables, and results during
+                the execution of the code.
+            
+                Syntax : console.log(message);
+              
+               *We can pass multiple values to console.log() function and it will print them in the order they are passed.
 
+->console.log() function primarily outputs the messages to the browser's console, but depending opn the environment where 
+  JavaScript is being run, it can also output elsewhere. We have four possible execution environments or runtime environment
+  where the output of console.log() funtion is displayed, mentioned as below: 
+  1)Browser Console.
+  2)Node,js Environment.
+  3)Web Development Tools.
+  4)Debugging Tools.    
 
+1)Browser Console: When running JavaScript code in a browser such as Chrome, Firefox, etc, console.log() outputs messages 
+                   to the browser's console(accessible via Developer Tools). Browser console is a debugging environmant 
+                   within the web browser.
+
+2)Node,js Environment: Node.js is a server-side execution environment for running JavaScript code outside the browser. When 
+                       running JavaScript code, console.log() outputs the messages to the terminal or command line, where the
+                       Node.js process is running.    
+
+3)Web Development Tools: If you are using development tools like React Native, console.log() function will print messages to
+                         the console of the development environment, or tools like Metro bundler(React Native's development 
+                         tool).
+
+4)Debugging Tools: In some advanced debugging setup(using tools like vs code or Chrome DevTools), console.log() function will 
+                   print messages may also appear in those environment's debugging pannels.
+
+->In general, though, console.log() doesn't create a visual output in the webpage or user interface (UI). For that, you'd 
+  use something like document.write() or DOM manipulation methods to display content directly in the browser's visible window.
+    
+->In JS, string can be written within double quotation as well as single quotes both.   
+  
+  Example: console.log("Hello World");
+           console.log("Welcome to tilde...");
+
+->We can terminate line use semi-colon or without semi-colon. Using semi-colon is a good pracice.  
+    
+Backtick(``) : Sometime it is called template literals or template strings which is anotherway to type out a string whithin 
+               ``. It is called backtick or grave accent. You can also use backtick for using string inside it.
+               Backtick is used in string template. We will discuss string template later.
+               We will see it later.
+               
+               Example: console.log(`Backtick.`); 
+                        output : Backtick.
 
 
 
