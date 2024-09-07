@@ -7,7 +7,9 @@
     
  * Creation/Declaration of Variable in JS :
             ->Systax : 
-                      var/let/const variable_name = values;  
+                      "keyword variable_name = values;"  
+                       
+            ->Here, in JavaScript var, let and const are such keywords which is used to create a variable.
                       eg: 1) var num = 12;
                           2) let num1 = 123;
                           3) const name1 = "JavaScript"

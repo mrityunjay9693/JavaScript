@@ -1,27 +1,24 @@
                                       Variables
 
-Variables:->Variable in JavaScript is the most basic building block programming entity which is used to store  information. And, these information can be used in the program later and if possible, can be altred.
-          ->In other words it can be defined as : Variable is an container which is used to store a value like like a
-            number or string and can store any type of JavaScript values.
+Variables:->Variable in JavaScript is the most basic building block programming entity which is used to store  information. And, these information can be used in the program later and if possible, can be altred. In other words it can be defined as : Variable is an container which is used to store a value like like a number or string and can store any type of JavaScript values.
           ->A variable is a named container for a particular set of bits or type of data like integer, float, string etc.
           ->A variable in JavaScript is a named storage for data.
           ->Variable name in JavaScript in case-sensitive.
 
           ->Variable in JavaScript is the most basic building block programming entity which is used to :
-              a)store information.
-              b)and,these information can be used in the program later 
-              c)and, if possible, can be altred/changed. 
+            a)store information.
+            b)and,these information can be used in the program later 
+            c)and, if possible, can be altred/changed. 
 
 Creation/Declaration of Variable in JS :
-        ->Systax :
-                  var/let/const variable_name = values;  
+                                        Systax : keyword variable_name = values;  
 
-                    eg: 1)var num = 12;
-                          let num1 = 123;
-                          const name1 = "JavaScript."
-                          console.log(num, num1, name1);
-                    output: 12, 123, JavaScript.
-            
+                                        Example: var num = 12;
+                                                 let num1 = 123;
+                                                 const name1 = "JavaScript."
+                                                 console.log(num, num1, name1);
+                                                 output: 12, 123, JavaScript.
+        * Here, var, let, const are keywords in JS using for variable declaration. (we will discuss later)  
         * values/data/information can be : an integer, a string etc.
         * var/let/const are the keyword in JavaScript which is used to create any programming entity as variable.
 
@@ -36,3 +33,10 @@ Rules for naming "variable": Following are the rules while naming a variable des
       4.Reserved keywords are not allowed for naming a variable name.
       5.Variable names are case-sensitive and we must takle care about its case.
       6.We use camelCase while naming a variable name in JavaScript. camelCase is the naming convention for naming a variable.
+
+In JavaScript, variable is declared using following keyword: 1) var
+                                                             2) let
+                                                             3) const
+
+1) var : "var" is a keyword which is used for declaration of a variable in JavaScript. The var keyword was introduced in JavaScript from very beginning, in its first version which was released in 1995 by Netscape. var is the only way to declare variable in JavaScript until let and const are introduced in ECMAScript 6 (ES6) in 2015.
+  
