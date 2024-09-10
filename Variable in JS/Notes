@@ -23,8 +23,7 @@ Creation/Declaration of Variable in JS :
         * var/let/const are the keyword in JavaScript which is used to create any programming entity as variable.
 
 Rules for naming "variable": Following are the rules while naming a variable described as below:
-      1.First character of a variable should not be any digit/number.We cannot start naming variable with
-        digit/number.
+      1.First character of a variable should not be any digit/number.We cannot start naming variable with a digit/number.
       2.While naming a variable name, a letter(alphabets), dollar sign($), and an underscore sign( _ ) can be used as
         first character of a variable name.
       3.Only dollar sign($) and underscore( _ ) are the special symbols allowed for naming a variable name. Apart from dollar
@@ -39,4 +38,25 @@ In JavaScript, variable is declared using following keyword: 1) var
                                                              3) const
 
 1) var : "var" is a keyword which is used for declaration of a variable in JavaScript. The var keyword was introduced in JavaScript from very beginning, in its first version which was released in 1995 by Netscape. var is the only way to declare variable in JavaScript until let and const are introduced in ECMAScript 6 (ES6) in 2015.
-  
+
+      -> Syntax : var variable_name = value;
+
+->Variables can store soome information and values in it.
+->We can use that information later in the program.
+->We can also alter the information later in the program.
+
+  Example:
+          //Declaration of a variable.
+          var firstName = "Mrityunjay";
+
+          //Use of the varaible firstName
+          console.log("First Name: "+firstName);
+
+->Altering the existing value/information of the variable firstName. Now, we don't need to re-declare the variable while  giving some value i.e., while altering it.
+
+          firstName = "Mrinal";
+          console.log("After alter, the First Name: "+firstName);
+
+->if, we use 'var' keyword with the same variable i.e., firstName, then another firstName variable will be created, since we have added the 'var' keyword along with the firstName.
+          var firstName = "Mohit";
+          console.log("Another firstName variable is created, firstName: "+firstName);
