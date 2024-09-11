@@ -1,6 +1,9 @@
                                       Variables
 
-Variables:->Variable in JavaScript is the most basic building block programming entity which is used to store  information. And, these information can be used in the program later and if possible, can be altred. In other words it can be defined as : Variable is an container which is used to store a value like like a number or string and can store any type of JavaScript values.
+Variables:->Variable in JavaScript is the most basic building block programming entity which is used to store  information. 
+          ->And, these information can be used in the program later and if possible, can be altred. 
+          ->In other words it can be defined as : Variable is an container which is used to store a value like like a number
+            or string and can store any type of JavaScript values.
           ->A variable is a named container for a particular set of bits or type of data like integer, float, string etc.
           ->A variable in JavaScript is a named storage for data.
           ->Variable name in JavaScript in case-sensitive.
