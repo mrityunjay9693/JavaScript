@@ -1,4 +1,4 @@
-                                      Variables
+                                       Variables
 
 Variables:->Variable in JavaScript is the most basic building block programming entity which is used to store  information. 
           ->And, these information can be used in the program later and if possible, can be altred. 
@@ -40,7 +40,8 @@ In JavaScript, variable is declared using following keyword: 1) var
                                                              2) let
                                                              3) const
 
-1) var : "var" is a keyword which is used for declaration of a variable in JavaScript. The var keyword was introduced in JavaScript from very beginning, in its first version which was released in 1995 by Netscape. var is the only way to declare variable in JavaScript until let and const are introduced in ECMAScript 6 (ES6) in 2015.
+1) var : "var" is a keyword which is used for declaration of a variable in JavaScript. The var keyword was introduced in
+         JavaScript from very beginning, in its first version which was released in 1995 by Netscape. var is the only way to declare variable in JavaScript until let and const are introduced in ECMAScript 6 (ES6) in 2015.
 
       -> Syntax : var variable_name = value;
 
@@ -55,11 +56,92 @@ In JavaScript, variable is declared using following keyword: 1) var
           //Use of the varaible firstName
           console.log("First Name: "+firstName);
 
-->Altering the existing value/information of the variable firstName. Now, we don't need to re-declare the variable while  giving some value i.e., while altering it.
+->Altering the existing value/information of the variable firstName. Now, we don't need to re-declare the variable
+  while  giving some value i.e., while altering it.
 
           firstName = "Mrinal";
           console.log("After alter, the First Name: "+firstName);
 
-->if, we use 'var' keyword with the same variable i.e., firstName, then another firstName variable will be created, since we have added the 'var' keyword along with the firstName.
+->if, we use 'var' keyword with the same variable i.e., firstName, then another firstName variable will be created,
+  since we have added the 'var' keyword along with the firstName.
           var firstName = "Mohit";
           console.log("Another firstName variable is created, firstName: "+firstName);
+
+->In JavaScript, the concept of scope and global scope are notexclusive features of the var keyword but, rather fundamental aspects of how variable are managed in JavaScript.
+
+Scope in JavaScript: Scope in JavaScriptrefers to the context inj which a variable is declared and accessed. Scope determine
+                     where in our code a variable can be used and whether it can be accessed from different parts of our code.
+                     JavaScript primarilyhas two types of scope which are mentioned as below:
+                     1) Function Scope.
+                     2) Block Scope.
+
+1) Function Scope: In the function scope, a variable which is declared inside a function is only accessible within that
+                   function only.
+                   The concept of function scope in JavaSCript pertains to how variable declared with "var" are confined
+                   to the function within which they are declared. This scope rule means that a variable declared inside
+                   a function with var is accessible throughout the entire function, regardless of block-level constructs
+                   each as if, for, or {} blocks.
+                   Variables declared with "var" keyword are function-scoped, that means a variable declared with "var"
+                   is only accessible within the function where it is declared. The variable is not accessible from outside
+                   that function, where it was declared., but it is accessible from any point within the function, including
+                   nested functions and blocks.
+                   When we declare variable using "var" inside a function, it is local to that function.
+
+                   Examples: function functionScope() {
+                                var fullName = "Mrityunjay Kumar";
+                                console.log(fullName);
+                              }
+                              functionScope();
+                              console.log(fullName); // Error : fullName isnot defined.
+
+                  -> In the above example, the variable "fullName" is declared inside the function "funtionScope", in which
+                     the variable "fullName" is local to the function. The variable is only accessible within the function
+                     "functionScope" only but not accessible outside the function. As we call the variable "fullName"
+                     outside the function, the function results an error : fullName is not defined, this is because the scope
+                     variable is limited to that funvtion(functionScope) only.
+
+Accessing Variables within Nested Functions: Variables declared with "var" keyword are accessible not only in the function
+                                             where it is declared, but also in nested function within that function. This
+                                             means, inner functions have access to tha variable of their outer functions.
+
+                    Example 1:  Nested Function Scope
+
+                             function outerFunction(){
+                              var outerVar = "I am outside variable.";
+
+                              function innerFunction(){
+                                console.log(outerVar);
+                              }
+                              innerFunction();
+                             }
+                             outerFunction();
+                             Output: I am outside variable.
+                    -> In the above example, the innerFunction() is nested inside outerFunction(). The variable outerVar,
+                       which is declared inside outerFunction(), is accessible by the innerFunction().
+                    -> However, if a variable is declared inside innerFunction(), which is nested within outerFunction(), 
+                       it will not be accessible by outerFunction(). Here is the example that verify the statement: 
+
+                       Example: function outerFunction() {
+                                  let outerVar = "I'm outside!";
+    
+                                  function innerFunction() {
+                                      let innerVar = "I'm inside!";
+                                      console.log(outerVar); // This will work because outerVar is accessible inside
+                                                             // innerFunction
+                                  }
+    
+                                  innerFunction();
+                                  
+                                  console.log(innerVar); // This will cause an error because innerVar is not accessible in
+                                                         // outerFunction
+                                }
+                                outerFunction();
+                                
+                                Output: Error: innerVar is not defined.
+                    
+                    ->outerVar is declared in outerFunction() and it is accessible within both outerFunction() and
+                      innerFunction().
+                    ->innerVar is declared inside innerFunction() and it is only accessible within innerFunction(),
+                       not in outerFunction().
+                    ->When trying to access innerVar from outerFunction(), you’ll get an error because it is out of scope.
+                    ->This shows how variables declared in an inner function are not accessible by the outer function.
