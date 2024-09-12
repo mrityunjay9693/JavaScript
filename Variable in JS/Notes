@@ -104,7 +104,7 @@ Accessing Variables within Nested Functions: Variables declared with "var" keywo
                                              where it is declared, but also in nested function within that function. This
                                              means, inner functions have access to tha variable of their outer functions.
 
-                    Example 1:  Nested Function Scope
+                    Example:  Nested Function Scope
 
                              function outerFunction(){
                               var outerVar = "I am outside variable.";
