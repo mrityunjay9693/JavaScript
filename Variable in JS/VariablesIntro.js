@@ -41,10 +41,25 @@ console.log("Last Name: "+lastName);
 console.log(cityName);
 
 //Ex 2:
-
-
 //JavaScript is a "case-sensitive" programming language.
 var countryName = "India";
 /* console.log(countryname); // error: countryname is not defined. */
 console.log(countryName);
 
+/**
+ * Variable names are "Cse-sensitive" : We will create a variable and use it. After using the variable, its value will 
+   be changed, but instead of altering the original variable, a new one will be created. 
+   This happens because of case sensitivity, where we used the same name, but changed the case of one of the letters.
+*/
+//Example: 
+myQualification = "Masters in Computer Application"; 
+console.log("My Qualification: "+myQualification);
+
+// the name is same, but the case of the letter 'Q' has been chaned to 'q' 
+//and thus another variable named myqualification is created.
+myqualification = "Masters of Computer Application"; 
+console.log("My Qualification: "+myqualification);
+
+//Correction: Changed the case of the variable from 'myqualification' to 'myQualification' for consistency
+myQualification = "Masters of Computer Application";
+console.log("Qualification: "+myQualification);
