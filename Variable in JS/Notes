@@ -72,10 +72,10 @@ In JavaScript, variable is declared using following keyword: 1) var
 Scope in JavaScript: Scope in JavaScriptrefers to the context inj which a variable is declared and accessed. Scope determine
                      where in our code a variable can be used and whether it can be accessed from different parts of our code.
                      JavaScript primarilyhas two types of scope which are mentioned as below:
-                     1) Function Scope.
-                     2) Block Scope.
+                     a) Function Scope.
+                     b) Block Scope.
 
-1) Function Scope: In the function scope, a variable which is declared inside a function is only accessible within that
+a) Function Scope: In the function scope, a variable which is declared inside a function is only accessible within that
                    function only.
                    The concept of function scope in JavaSCript pertains to how variable declared with "var" are confined
                    to the function within which they are declared. This scope rule means that a variable declared inside
@@ -145,3 +145,5 @@ Accessing Variables within Nested Functions: Variables declared with "var" keywo
                        not in outerFunction().
                     ->When trying to access innerVar from outerFunction(), you’ll get an error because it is out of scope.
                     ->This shows how variables declared in an inner function are not accessible by the outer function.
+
+b) Block Scope: 

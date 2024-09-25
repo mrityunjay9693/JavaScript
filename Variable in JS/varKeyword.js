@@ -20,7 +20,7 @@ console.log("First Name: "+firstName);
 firstName = "Mrinal";
 console.log("After alter, the First Name: "+firstName);
 
-//if, we use 'var' keyword with the same variable i.e., firstName, then another firstName variable will be created, since 
-//we have added the 'var' keyword along with the firstName.
+//if, we use 'var' keyword with the same variable name i.e., firstName, then another firstName variable will be created, since 
+//we have added the 'var' keyword along with the "firstName".
 var firstName = "Mohit";
 console.log("Another firstName variable is created, firstName: "+firstName);
