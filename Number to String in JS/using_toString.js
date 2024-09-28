@@ -1,4 +1,4 @@
-//1] Using toString method: 
+//1] Using toString() method: 
 let value = 12;
 
 let newValue = value.toString(); //converts 12 to a "12" which is a string type
