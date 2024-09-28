@@ -9,14 +9,16 @@
 //Ex:1
 const pi = 3.14;
 //pi = 3.15; //error : Assignment to constant variable. We cannot changed value of constant variable(using const) after 
-            //its initial assignment.
+//its initial assignment.
 console.log(pi);
+//operation with pi constant value:
+console.log("2*pi: " + (2 * pi));
 
 //Ex:2
 const countryName = "India";
 let stateName = "Bihar";
 let cityName = "Muzaffarpur";
-console.log(cityName,",", stateName,",", countryName);
+console.log(cityName, ",", stateName, ",", countryName);
 /**
  * If i want to change countryName which is declared using const, will not allow to change 
    the value of variable countryName(declared using const) 
