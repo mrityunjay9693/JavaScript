@@ -21,12 +21,14 @@ console.log(newName); //OPutput:String after trim: India
 let subjectName = " JavaScript ";
 subjectName.trim(); //This returns the trimmed string but doesn't modify the original `subjectName` 
 console.log("After trim:"+subjectName); //After trim: JavaScript.
+/**
+ * What is happening here : since strings are immutable in JavaScript, the original string subjectName is not 
+   modified after using trim() with subjectName to remove leading and trailing whitespaces.
+   The reason the spaces in subjectName are not removed after calling trim() in the following code is because 
+   the trim() method does not modify the original string. Instead, it returns a new string with the 
+   leading and trailing whitespace removed. In your code, you're not storing the result of the trim() operation.
 
-//What is happening here : since strings are immutable in JavaScript, the original string subjectName is not 
-//modified after using trim() with subjectName to remove leading and trailing whitespaces.
-//The reason the spaces in subjectName are not removed after calling trim() in the following code is because 
-//the trim() method does not modify the original string. Instead, it returns a new string with the 
-//leading and trailing whitespace removed. In your code, you're not storing the result of the trim() operation.
+ */
 
 //Correct Approach: To fix this issue,we need to assign the result of subjectName.trim() 
 //either in same variable or in new one, like this:
