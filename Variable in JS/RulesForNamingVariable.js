@@ -15,8 +15,8 @@ console.log("My Role: " + _myRole);
 //console.log("first value: " 1value);    //SyntaxError: Invalid or unexpected token
 
 /**
- * Rule 2: Once the first character of a variable name is established(which must be a letter, $, _), as per the rule, 
-   the subsequent characters in the varibale name can include:
+ * Rule 2: Allowed Characters: Once the first character of a variable name is established(which must be a letter, $, _), 
+   as per the rule, the subsequent characters in the varibale name can include:
    a)Letters : a - z, A - Z
    b)Digits: 0 - 9
    c)Underscopre character(_).
@@ -32,3 +32,14 @@ var currency$ = "Dollar($)";   //Valid : Special character $ is allowed after fi
 console.log("Name: "+name1);
 console.log("Schoole Name: "+school_name);
 console.log("Money accepted in: "+currency$);
+
+/**
+ *  Invalid against Rule 2:
+var car@namee = "BMW";  // SyntaxError: Invalid or unexpected token
+console.log(car@namee); //We cannot use special character like @ other than $ and _
+
+var car price = "Fifty Lakh Rupees Only"; //SyntaxError: Unexpected identifier 'price'
+console.log(car price); //Variable names cannot contain spaces
+
+ */
+
