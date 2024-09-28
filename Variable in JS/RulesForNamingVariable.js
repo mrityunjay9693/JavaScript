@@ -53,7 +53,7 @@ console.log(car price); //Variable names cannot contain spaces
 
  */
 //Valid name:
-var country_name = "USA";
+var country_name = "USA"; // country_name : snake case writing. 
 var payin$ = "200 $";
 console.log(country_name);
 console.log("Amount to be paid: "+payin$);
