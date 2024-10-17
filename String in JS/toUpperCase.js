@@ -36,4 +36,3 @@ let jsIsImmutable = "js is immutable";
 console.log(jsIsImmutable.toUpperCase()); // it will give you or print Lower case Upper case.
 jsIsImmutable.toUpperCase(); // here, toUpperCase() method returns a new string which must be store in a variable. If 
 console.log(jsIsImmutable); // it is not stored in any variable then you will get the same value in lower case.
- 
