@@ -7,17 +7,19 @@ Types of data types in JavaScript: In JavaScript, there are two types of data ty
 a)Primitive data types.
 b)Non-primitive data types.
 
-a)Primitive data types:
+Let's get deep dive into primitive data types and here you go: 
 
-There are seven(7) primitive data types available in JavaScript as shown below:
-
-1)Numbers
-2)BigInt
-3)String
-4)Boolean
-5)Undefined
-6)Null
-7)Symbol
+a)Primitive data types: In JavaScript, primitive data type are the most basic data types which represents a single value and 
+                        are immutable i.e., which can't be altered. The primitive data types are passed by value, meaning that
+                        when we assign or pass a value, JavaScript creates a copy of that value. There are seven(7) primitive 
+                        data types available in JavaScript as shown below:
+                        1)Numbers
+                        2)BigInt
+                        3)String
+                        4)Boolean 
+                        5)Undefined
+                        6)Null
+                        7)Symbol
 
 2)BigInt type:->BigInt was introduced in year 2020 and it is a new feature of ES11 JS version. BigInt is a 
                 primitive data type and built-in object in JavaScript which is used to store the numeric value
