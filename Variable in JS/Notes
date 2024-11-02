@@ -40,16 +40,19 @@ In JavaScript, variable is declared using following keyword: 1) var
                                                              2) let
                                                              3) const
 
-1) var : "var" is a keyword which is used for declaration of a variable in JavaScript. The var keyword was introduced in
-         JavaScript from very beginning, in its first version which was released in 1995 by Netscape. var is the only way to declare variable in JavaScript until let and const are introduced in ECMAScript 6 (ES6) in 2015.
-
+1) var :"var" is a keyword which is used for declaration of a variable in JavaScript. The var keyword was introduced in
+        JavaScript from very beginning, in its first version which was released in 1995 by Netscape. 
+        var is the only way to declare variable in JavaScript until let and const are introduced in ECMAScript 6 (ES6) in 2015.
+           
+      
       -> Syntax : var variable_name = value;
 
 ->Variables can store soome information and values in it.
 ->We can use that information later in the program.
 ->We can also alter the information later in the program.
+-> Var keyword is function scope.
 
-  Example:
+Example:
           //Declaration of a variable.
           var firstName = "Mrityunjay";
 
@@ -69,7 +72,7 @@ In JavaScript, variable is declared using following keyword: 1) var
 
 ->In JavaScript, the concept of scope and global scope are notexclusive features of the var keyword but, rather fundamental aspects of how variable are managed in JavaScript.
 
-Scope in JavaScript: Scope in JavaScriptrefers to the context inj which a variable is declared and accessed. Scope determine
+Scope in JavaScript: Scope in JavaScript refers to the context in which a variable is declared and accessed. Scope determine
                      where in our code a variable can be used and whether it can be accessed from different parts of our code.
                      JavaScript primarilyhas two types of scope which are mentioned as below:
                      a) Function Scope.
