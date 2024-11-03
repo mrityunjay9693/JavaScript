@@ -6,3 +6,4 @@ alert() : The alert() function is a built-in JavaScript function that displays a
                    </script>  
         ->In the above example, when the webpage is loaded, the browser will run the JavaScript code inside the <script>
           tag, which will trigger the alert box to appear, displaying the message "Hello world, Welcome to tilde~"
+          
