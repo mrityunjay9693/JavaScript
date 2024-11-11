@@ -4,18 +4,18 @@
    back-tick character.
 
  * The two ways for creating strings in JS ,mentioned below:
-                      a)String created as primitives, from string literals(putting values in quotes)
+                      a)String created as primitives, from string literals(putting values in quotes): 
                       b)String created as object, using the String() constructor(new String())
  */
 
 //a)String created as primitives, from string literals(putting values in single/double quotes).
-//String within double quotation("string").
+//1.String within double quotation("string").
 let firstName = "Mrityunjay";
 
-//String within single quotation('string').
+//2.String within single quotation('string').
 let middleName = 'Kumar'; 
 
-//String is written using backtick character(`string`)
+//3.String is written using backtick character(`string`)
 let lastName = "Yadav";
 const schoolName = "Holy Mission SR SEC SCH";
 let cityName = 'Muzaffarpur';
