@@ -5,7 +5,8 @@
 
  * The two ways for creating strings in JS ,mentioned below:
                       a)String created as primitives, from string literals(putting values in quotes): 
-                      b)String created as object, using the String() constructor(new String())
+                      b)String created as object, using the String() constructor(new String("values"))
+                      c)String created using .fromCharode() method.
  */
 
 //a)String created as primitives, from string literals(putting values in single/double quotes).
