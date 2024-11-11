@@ -1,21 +1,23 @@
-Concatenation of Strings in JS: In JavaScript, the concatenation of strings is defined as the appending 
-                                the given one or more string to the end of another string and returning a
-                                new string. We can also defined it as "joining of two or more strings together
-                                and returning a new string as output". String concatenation is the process or 
-                                operation of joining character strings end-to-end.
+Concatenation of Strings in JS: In JavaScript, the concatenation of strings is defined as the appending the given one or more
+                                string to the end of another string and returning a new string. We can also defined it as 
+                                "joining of two or more strings together and returning a new string as output". String 
+                                concatenation is the process or operation of joining character strings end-to-end.
+                                
                                 Ex1:    str1 = "Hello"
                                         str2 = "World!"
                                         newString = str1 + str2; // process/operation of concatenation 
                                         console.log(newString);      
+                                
                                 output: HelloWorld!
                                 
                                 Ex2:    greet1 = "Good morning,";
                                         greet2 = " Welcome to tilde!"
                                         greetMe = greet1 + " " + greet2;
                                         console.log(greetMe);
+                                
                                 output: Good morning, Welcome to tilde!     
 
-In JavaScript there are four ways to Concatenat Strings listed below: 
+In JavaScript there are four ways to Concatenate Strings listed below: 
 1]Using the: '+' Operator.
 2]Using the: concat() method/function.
 3]Using the: array join() method/function. 
@@ -63,8 +65,7 @@ Mutative Concatenation Approach : ('+=' operator)
                                        will not altered during the concatenation but a new string is returned as output that 
                                        has all the input strings concatenated.
 
-        Syntax: 
-                string.concat(parameter1. parameter2,... parameter_n);
+        Syntax: string.concat(parameter1. parameter2,... parameter_n);
                 
                 Where, string : variable name has input string which has to be concatenated with the strings 
                 passes as parameter
@@ -88,6 +89,7 @@ Mutative Concatenation Approach : ('+=' operator)
                 let output1 = "Indian Cities: ".concat(...citiesName);
                 console.log(output);    
                 console.log(output1);  
+        
         Output: Indian Cities: Lucknow,Kolkata,Patna,Bangalore,Jaipur
                 Spread operator is used-> Indian Cities: LucknowKolkataPatnaBangaloreJaipur
                 
