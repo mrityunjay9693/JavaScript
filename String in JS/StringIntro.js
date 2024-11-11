@@ -23,12 +23,17 @@ let stateName = "Bihar";
 
 //b)String is created as object, using String() constructor(new String()).
 const countryName = new String("India");
+const countryCode = new String("91");
+var booleanString = new String(true);
+var nullString = new String(null);
 
 //Accessing above strings.
-console.log("First name:",firstName);
-console.log("Middle name:",middleName);
-console.log("Last name:",lastName);
-console.log("School name:",schoolName);
-console.log("Address:",cityName+",",stateName+","+"Pin code: 842001.");
-console.log(countryName);
-
+console.log("First name:",firstName);   //Output: First name: Mrityunjay
+console.log("Middle name:",middleName); //Output: Middle name: Kumar
+console.log("Last name:",lastName);     //Output: Last name: Yadav
+console.log("School name:",schoolName); //Output: School name: Holy Mission SR SEC SCH
+console.log("Address:",cityName+",",stateName+","+"Pin code: 842001."); //Output: Address: Muzaffarpur, Bihar,Pin code: 842001.
+console.log(countryName);   //Output: [String: 'India']
+console.log(countryCode);   //Output: [String: '91']
+console.log(booleanString); //Output: [String: 'true']
+console.log(nullString);    //Output: [String: 'null']
