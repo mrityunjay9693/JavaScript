@@ -89,5 +89,14 @@ a {
   font-size: 1rem;
   margin-top: 1rem;
   font-weight: 600;
+}
 
+.todo-section {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.form-todo {
+  border: 2px solid red;
+  min-height: 8vh;
 }
