@@ -97,6 +97,30 @@ a {
 }
 
 .form-todo {
-  border: 2px solid red;
-  min-height: 8vh;
+  min-height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form-todo input {
+  min-height: 100%;
+}
+
+.form-todo input[type="text"]{
+  width : 80%;
+  padding: 0.4rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.form-todo input[type="submit"]{
+ width: 19%; 
+ background: rgba(44, 52, 50);
+ color: white;
+ font-weight: bold;
+}
+
+.section-signup {
+  margin-top: 1rem;
 }
