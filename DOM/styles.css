@@ -24,11 +24,14 @@
    */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
-* {
+/* ------------------------Basic styling for Elements ------------------------ */
+
+* {  
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -40,7 +43,7 @@ a {
 
 .header {
   position: relative;
-  min-height: 60vh;
+  min-height: 60vh; /* background height */
   background: url("./static/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
