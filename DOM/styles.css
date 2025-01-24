@@ -26,7 +26,7 @@
 
 /* ------------------------Basic styling for Elements ------------------------ */
 
-* {  
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -110,20 +110,58 @@ a {
   min-height: 100%;
 }
 
-.form-todo input[type="text"]{
-  width : 80%;
+.form-todo input[type="text"] {
+  width: 80%;
   padding: 0.4rem;
   font-size: 1rem;
   font-weight: 400;
 }
 
-.form-todo input[type="submit"]{
- width: 19%; 
- background: rgba(44, 52, 50);
- color: white;
- font-weight: bold;
+.form-todo input[type="submit"] {
+  width: 19%;
+  background: rgba(44, 52, 50);
+  color: white;
+  font-weight: bold;
 }
 
 .section-signup {
+  margin: 1rem auto;
+  text-align: center;
+  background: rgb(240, 240, 240);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.signup-form {
+  max-width: 800px;
+  width: 90%;
+  text-align: left;
+  margin: auto;
+}
+
+.signup-form label {
+  display: block;
+}
+
+.signup-form input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+}
+
+.signup-form textarea {
+  width: 100%;
+}
+.form-group {
+  margin: 1rem;
+}
+
+.signup-btn {
+  background: rgb(44, 52, 50);
+  color: white;
+  padding: 1rem 2rem;
+  display: block;
+  margin: auto;
+  font-weight: 600;
   margin-top: 1rem;
 }
